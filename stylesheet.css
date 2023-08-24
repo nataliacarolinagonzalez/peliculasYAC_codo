@@ -1,9 +1,36 @@
-h1{
-    align-items: first baseline;
-    height: 46;
-    width: 120;
+*{
+    margin: 0 auto;
+
+}
+header{
+    display: grid;
+    
+}
+main{
+    text-align: center;
+    height: 600px;
+    width: 100%;
+}
+li{
+    display: inline-block;
+}
+nav{
+    background-color: lightblue;
+    height: 30px;
+    width: 100%;
+    
+    
 }
 
-img{
-    height: 20px;
+footer{
+    text-align: center;
+    margin: 20px auto;
+    background-color: lightblue;
+    width: 100%;
 }
+
+
+img, svg{
+    height: 25px;
+}
+
