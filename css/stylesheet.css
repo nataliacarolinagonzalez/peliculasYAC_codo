@@ -1,28 +1,31 @@
 *{
     margin: 0 auto;
-
+    box-sizing: border-box;
 }
+
+body{
+    background-color: rgb(78, 73, 73)
+}
+
 header{
     display: grid;
     background-color: rgb(154, 153, 153);
-    
 }
+
 main{
-    background-color: rgb(78, 73, 73);
     text-align: center;
-    height: 600px;
     width: 100%;
     color: antiquewhite;
 }
+
 li{
     display: inline-block;
 }
+
 nav{
     background-color: lightblue;
     height: 30px;
-    width: 100%;
-    
-    
+    width: 100%;   
 }
 
 footer{
@@ -32,7 +35,7 @@ footer{
     width: 100%;
 }
 
-img, svg{
+img,svg{
     height: 25px;
 }
 
@@ -59,26 +62,10 @@ img, svg{
     margin-left: 150px;
     width: 180px;
     height: 260px;
-    display: block;
-    float: left;
+    /* display: block; */
+    /* float: left;
     vertical-align: middle;
-    align-items: middle;
+    align-items: middle; */
     border-radius: 20px;
    }
  
-.descripcion-peli{/*Ubicado en MarioDescripcion.html*/
-        margin-left: 50%;
-        text-align: left;
-        
- 
-}
-
-.trailer{/*Ubicado en MarioDescripcion.html*/
-   display: block;
-   margin-top: 8%;
-   width: 450px;/*Recordar sacar el size del iframe*/
-   height: 256px;/*Recordar sacar el size del iframe*/
-    
-
-
-}

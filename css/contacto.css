@@ -1,0 +1,65 @@
+div#contacto{
+    margin: 50px auto;
+    background-color: lightblue;
+    width: 65%;
+    border-radius: 5%;
+    padding: 20px 10px;
+    color: black;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px black;
+    
+}
+div h2{
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: 1px 1px 2px gray;
+}
+form input, textarea{
+    display: block;
+    width: 70%;
+    margin-top: 10px;
+    box-shadow: 1px 1px 2px gray;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+form input{
+    height: 25px;
+    
+    
+}
+form textarea{
+    height: 10%;
+}
+form label{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+    
+}
+form input[type="checkbox"]{
+    box-shadow: none;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+form input[type="submit"]{
+    background-color: grey;
+    width: auto;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px ;
+    color: antiquewhite;
+    box-shadow: 1px 1px 2px black;
+}
+form input[type="submit"]:hover{
+    background-color: lightcoral;
+    color: black;
+    transition: 1s;
+}
+form input:focus, form textarea:focus{
+    box-shadow: 1px 1px 2px black;
+}
