@@ -33,6 +33,7 @@ footer{
     margin: 20px auto;
     background-color: lightblue;
     width: 100%;
+    display: flex;
 }
 
 img,svg{
