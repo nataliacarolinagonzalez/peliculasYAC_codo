@@ -1,73 +1,130 @@
-*{
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(78, 73, 73)
+body {
+    background-color: black
 }
 
-header{
+header {
     display: grid;
-    background-color: rgb(154, 153, 153);
+    color: white;
 }
 
-main{
+main {
     text-align: center;
     width: 100%;
     color: antiquewhite;
 }
 
-li{
+li {
     display: inline-block;
 }
 
-nav{
-    background-color: lightblue;
-    height: 30px;
-    width: 100%;   
+.nav {
+    background-color: #ff9f1c;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    
 }
 
-footer{
+footer {
+    background-color: #ff9f1c;
     text-align: center;
     margin: 20px auto;
-    background-color: lightblue;
     width: 100%;
     display: flex;
 }
 
-img,svg{
+img,
+svg {
     height: 25px;
 }
 
 
-#logo{
+#logo {
     display: block;
 
     background-color: black;
 }
-#logoimg{
-    
+
+#logoimg {
+
     margin-top: 5px;
     margin-left: 5px;
     margin-bottom: 1px;
-    width:70px;
+    width: 70px;
     height: 30px;
-    
+
 }
+
 /*Tuve que separar el div y la imagen o se editaba todo a la vez*/
 
 
-.imagen-peli{/*podria estar en las listas de peliculas en el inicio, el tamaño puede ser igual*/
+.imagen-peli {
+    /*podria estar en las listas de peliculas en el inicio, el tamaño puede ser igual*/
     margin-top: 40px;
-    margin-left: 150px;
-    width: 180px;
-    height: 260px;
+    margin-left: 50px;
+    width: 300px;
+    height: 425px;
     /* display: block; */
     /* float: left;
     vertical-align: middle;
     align-items: middle; */
     border-radius: 20px;
-   }
- 
+}
+/* A partir de aqui coloque todo lo de peliculas*/
+
+
+
+#cards{
+    text-align: center;
+    background-color: wheat;
+    width: 95%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+.imagenes{
+    float: left;
+    width: 400px;
+    height: 480px;
+    border-radius: 20px;
+    margin: 50px;
+    border: 5px solid white;
+}
+
+
+.descripcion-peli{
+    background-color: #4c7c77;
+    margin-top: 5%;
+    margin: 50px;
+    text-align: left;
+    padding: 20px;
+    text-align: justify;
+    
+    
+}
+
+h2{
+    margin-top: 50px;
+    text-align: left;
+}
+h4{
+    text-align: left;
+}
+.trailer{
+    display: block;
+    margin-top: 5%;
+    width: 450px;/*Recordar sacar el size del iframe*/
+    height: 256px;/*Recordar sacar el size del iframe*/
+   
+
+}
