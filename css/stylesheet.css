@@ -22,6 +22,36 @@ main {
 
 li {
     display: inline-block;
+    color: rgb(255, 255, 255);
+    background-color: #423c35;
+    border-radius: 10%;
+}
+h1 {
+    color: antiquewhite;
+    font-size: 1.5rem;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+    border-width: 0px 3px 3px 3px;
+    border-color: aliceblue;
+    border-style: solid;
+    /* border-color: aliceblue;
+    border-bottom-style: solid;
+    border-left: solid;
+    border-right: solid; */
+}
+
+
+
+
+
+img,
+svg {
+    height: 25px;
 }
 
 .nav {
@@ -30,23 +60,32 @@ li {
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
-    text-decoration: none;
-    
+
+
 }
 
-footer {
-    background-color: #ff9f1c;
-    text-align: center;
-    margin: 20px auto;
-    width: 100%;
+.footer{
+
+        background-color: #ff9f1c;
+        text-align: center;
+        margin: 3rem auto;
+        width: 100%;
+        position: fixed;
+
+}
+.search-tab {
     display: flex;
+    justify-content: flex-end;
+
 }
 
-img,
-svg {
-    height: 25px;
-}
 
+.list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 #logo {
     display: block;
@@ -68,19 +107,13 @@ svg {
 
 
 .imagen-peli {
-    /*podria estar en las listas de peliculas en el inicio, el tamaño puede ser igual*/
-    margin-top: 40px;
-    margin-left: 50px;
-    width: 300px;
-    height: 425px;
-    /* display: block; */
-    /* float: left;
-    vertical-align: middle;
-    align-items: middle; */
-    border-radius: 20px;
+    margin-bottom: 0px;
+    width: 20rem;
+    height: 25rem;
+    padding: 1rem, 1rem;
+    border: 2px, solid, white;
+    margin-bottom: ;
 }
-/* A partir de aqui coloque todo lo de peliculas*/
-
 
 
 #cards{
@@ -113,13 +146,7 @@ svg {
     
 }
 
-h2{
-    margin-top: 50px;
-    text-align: left;
-}
-h4{
-    text-align: left;
-}
+
 .trailer{
     display: block;
     margin-top: 5%;
@@ -128,3 +155,47 @@ h4{
    
 
 }
+
+@media screen and (max-width: 1660px) {
+    
+    *{font-size: 1.1rem;}
+
+    .search-tab {
+        justify-content: end;
+    }
+
+    h1 {
+        text-align: start;
+
+    }
+    
+}
+
+
+@media screen and (max-width: 1408px) {
+    
+
+
+    }
+
+
+
+ @media screen and (max-width: 425px) {
+     .search-tab {
+         justify-content: center;
+
+     }
+
+     h1 {
+         text-align: center;
+     }
+ }
+
+ @media screen and (max-width: 320px) {
+     .imagen-peli {
+         margin-bottom: 0px;
+         width: 15rem;
+         height: 20rem;
+     }
+
+ }

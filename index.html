@@ -1,55 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peliculas YACS</title>
+    <title>YACS</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
-    
-    <!-- falta favicon -->
 </head>
 
 <body>
+    <!-- /////////////////////////////////////////// NAV, MENU -->
+    <div class="nav">
+        <a href="index.html"><img id="logoimg" src="#" alt="logo"></a>
+        <ul>
+            <a class="nav-sub" href="#">
+                <li>Inicio</li>
+            </a>
+            <a class="nav-sub" href="login.html">
+                <li>Log in</li>
+            </a>
+            <a class="nav-sub" href="contacto.html">
+                <li>Contacto</li>
+            </a>
+            <a class="nav-sub" href="carrito.html">
+                <li>Carrito</li>
+            </a>
+        </ul>
+    </div>
+    <!-- ///////////////////////////////////////////////////  BUSQUEDA FILTRO    -->
+    <div class="search-tab">
+        <header class="search-tab-sub">
+            <label for="busqueda">Buscar</label>
+            <input id="busqueda" type="text">
 
-        <div id="logo">
-            <!-- falta icono de la pagina -->
-        </div>
-        <nav>
-            <ul>
-                <a class="nav" href="#"><li>Inicio</li></a>
-                <a class="nav" href="login.html"><li>Log in</li></a>
-                <a class="nav" href="contacto.html"><li>Contacto</li></a>
-                <a class="nav" href="carrito.html"><li>Carrito</li></a>
-            </ul>
-        </nav>
-<header>
-    <div id="barra-busqueda">
-        <label for="busqueda">Buscar</label>
-        <input id="busqueda" type="text">
+            <div for="" busqueda>
+                <button name="Buscar">Buscar</button>
+            </div>
+
+        </header>
     </div>
 
-    <div id="carrito">
-        <img src="./IMG/carrito.png" alt="">
+    <!-- ///////////////////////////////////////////////// -->
+    <div class="main-container">
+
+        <main class="list-container">
+
+            <h1 style="flex-basis: 100%;"><b>Películas YACS</b></h1>
+
+            <a href="Mario.html"><img src="./img/mario.png" alt="Imagen pelicula de Mario" class="imagen-peli">
+                <h3>The super Mario Bros</h3>
+            </a>
+
+
+            <a href="Barbie.html"><img src="./img/barbie1.png" alt="Imagen pelicula de Barbie" class="imagen-peli">
+                <h3>Barbie Movie</h3>
+            </a>
+
+            <a href="Rapidos.html"><img src="./img/rapido y furioso.png" alt="Imgen pelicula Rapido y furioso"
+                    class="imagen-peli">
+                <h3>Rapidos y Furiosos X</h3>
+            </a>
+
+            <a href="avatar.html"><img src="./img/avatar2.jpg" alt="Imagen de pelicula Avatar" class="imagen-peli">
+                <h3>Avatar 2</h3>
+            </a>
+        </main>
+
+
     </div>
-</header>
-       
-    
-    <main>
 
-        <h1><b>Películas YACS</b></h1>
 
-        <a href="Mario.html"><img src="./img/mario.png" alt="Imagen pelicula de Mario"
-                class="imagen-peli"></a>
-        <a href="Barbie.html"><img src="./img/barbie1.png" alt="Imagen pelicula de Barbie"
-                class="imagen-peli"></a>
-        <a href="Rapidos.html"><img src="./img/rapido y furioso.png" alt="Imgen pelicula Rapido y furioso"
-                class="imagen-peli"></a>
-        <a href="avatar.html"><img src="./img/avatar2.jpg" alt="Imagen de pelicula Avatar" class="imagen-peli"></a>
 
-    </main>
 
-    <footer>
-        <h5>Copyright 2023</h5> <br>
-       
-       
-    </footer> 
+    <div class="footer">
+        <footer>
+            <h4>Copyright 2023</h4>
+            <a href="#"><img src="img/facebook.png" alt=""></a><!--faltan links-->
+            <a href="#"><img src="img/instagram.png" alt=""></a><!--faltan links-->
+            <a href="#"><img src="img/linkedin.png" alt=""></a><!--faltan links-->
+        </footer>
+    </div>
+</body>
+
+</html>
