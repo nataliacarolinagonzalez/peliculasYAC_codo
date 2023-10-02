@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Super Mario Bros. Movie</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
+
 </head>
 <body>
     <div id="logo">
@@ -12,32 +13,58 @@
             <a href="index.html"><img id="logoimg"  src="#" alt="logo"></a>
     </div>
 
-    <nav>
+    </div>
+    <div class="nav">
+        <a href="index.html"><img id="logoimg" src="#" alt="logo"></a>
         <ul>
-            <a class="nav" href="index.html"><li>Inicio</li></a>
-            <a class="nav" href="login.html"><li>Log in</li></a>
-            <a class="nav" href="contacto.html"><li>Contacto</li></a>
-            <a class="nav" href="carrito.html"><li>Carrito</li></a>
+            <a class="nav-sub" href="index.html">
+                <li>Inicio</li>
+            </a>
+            <a class="nav-sub" href="login.html">
+                <li>Log in</li>
+            </a>
+            <a class="nav-sub" href="contacto.html">
+                <li>Contacto</li>
+            </a>
+            <a class="nav-sub" href="carrito.html">
+                <li>Carrito</li>
+            </a>
         </ul>
-    </nav>
-    <div id="cards">
-        <h1>The Super Mario Bros. Movie.</h1>
+    </div>
+
+
+<div id="cards">
+
+<div class="carditem1">
+
+        <h1 id="desc-name">The Super Mario Bros. Movie.</h1>
         <img class="imagenes" src="./img/mario.png" alt=""><!--Imagen de pelicula-->
         <!-- <h2 style="text-align: end; position: relative;">Pelicula N°1</h2> -->
-        <h2>SINOPSIS</h2>
-        <h4><i>Películas para niños a partir de 6 años.</i></h4>
+      </div>
+
+    <div class="cardtext">
+        <h2 id="sino-desc-h2">SINOPSIS</h2>
+        
         <p class="descripcion-peli">
             Adaptación de la serie de videojuegos de Nintendo. La película cuenta la historia de Mario y Luigi, dos hermanos que viajan a un mundo oculto para rescatar a la Princesa Peach, capturada por el malvado Rey Bowser. Las cosas, sin embargo no serán sencillas. Mario y Luigi tendrán que enfrentarse a un ejército de setas animadas antes de luchar contra su oponente. Rutas de ladrillos y castillos con múltiples peligros serán algunos de los obstáculos que los hermanos tendrán que superar para conseguir su objetivo.
         </p>
-        <iframe class="trailer" src="https://www.youtube.com/embed/PFxMB9SeEfc?si=6jALUSzKd95eafaV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+
+
+
+  <div class="trailer">
+  <iframe src="https://www.youtube.com/embed/PFxMB9SeEfc?si=6jALUSzKd95eafaV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    <footer>
-        <h5>Copyright 2023</h5> <br>
+
+<div class="footer" >
+    <footer id="foot">
+        <h4>Copyright 2023</h4>
         <a href="#"><img src="img/facebook.png" alt=""></a><!--faltan links-->
         <a href="#"><img src="img/instagram.png" alt=""></a><!--faltan links-->
         <a href="#"><img src="img/linkedin.png" alt=""></a><!--faltan links-->
     </footer>
-        
-    
+</div>
 </body>
+
 </html>
