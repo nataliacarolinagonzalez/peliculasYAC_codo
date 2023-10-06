@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
@@ -7,13 +8,84 @@
 
 body {
     background-color: black;
-    min-width: fit-content;
+    position: relative;
+    padding-bottom: 15em;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
-    display: grid;
-    color: white;
+header{
+    position: sticky;
+    top: 0px; 
+    width: 100vw;  
+    z-index: 1000;
+    font-family:'Alkatra', cursive;
 }
+nav {
+    background-color: #ff9f1c;
+    color: white;
+    margin: 0;
+    height: 5em;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+
+}
+
+nav li { /* conviene ser especifico q li son, xq si no tomas todos */
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    /* background-color: #423c35; */
+   /*  border-radius: 10%; */
+    margin: 2em;
+    font-variant: small-caps;
+    font-size: 1.3em;
+    letter-spacing: 0.2em; 
+}
+nav i{
+    color: whitesmoke;
+    margin: 0.5em;
+}
+#search-tab {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #0B3954;
+    border-radius: 0.2em;
+    align-items: center;
+}
+#search-tab  button i{
+    color: whitesmoke;
+}
+#search-tab input {
+    border-radius: 0.2em;
+    padding: 1em;
+    height: 2.5em;
+    color: #0B3954;
+    outline: none;
+    font-size: 1em;
+    border: none;
+}
+#search-tab  input:focus, #search-tab button:active, .suscripcion input:focus {
+    box-shadow: 0px 0px 5px 1px #0B3954;
+}
+
+#search-tab  button {
+    color: white;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: #0B3954;
+}
+
+
+
+
+
+
 
 
 main {
@@ -22,16 +94,16 @@ main {
     color: antiquewhite;
 }
 
-li {
-    display: inline-block;
-    color: rgb(255, 255, 255);
-    background-color: #423c35;
-    border-radius: 10%;
-}
+
 h1 {
-    color: antiquewhite;
-    font-size: 1.5rem;
+    font-family: 'Dela Gothic One', cursive;
+    letter-spacing: 0.8em;
+    margin: 2em;
+    font-size: 3em;
+    margin: 1.5em auto;
+    text-shadow: 1px 1px 5px #ff9f1c;
 }
+
 
 h3 {
     margin-top: 0px;
@@ -51,35 +123,12 @@ h3 {
 
 
 
-img,
-svg {
-    height: 25px;
-}
-
-.nav {
-    background-color: #ff9f1c;
-    color: white;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
-
-
-}
-
-.footer{
-
-        background-color: #ff9f1c;
-        text-align: center;
-        margin: 3rem auto;
-        width: 100%;
-        display: flex;
-}
-.search-tab {
+/* .search-tab {
     display: flex;
     justify-content: flex-end;
 
 }
-
+ */
 
 .list-container {
     display: flex;
@@ -90,18 +139,15 @@ svg {
 
 #logo {
     display: block;
-
     background-color: black;
 }
 
 #logoimg {
-
     margin-top: 5px;
     margin-left: 5px;
     margin-bottom: 1px;
     width: 70px;
     height: 30px;
-
 }
 
 /*Tuve que separar el div y la imagen o se editaba todo a la vez*/
@@ -185,7 +231,7 @@ svg {
 
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1660px) {
+/* @media screen and (max-width: 1660px) {
     
     *{font-size: 1.1rem;}
 
@@ -245,3 +291,89 @@ svg {
         max-width: 100%;
     }
  }
+ */
+/* ------- */ 
+/* footer{
+    background-color: #ff9f1c;
+    text-align: center;
+    margin: 3rem auto;
+    width: 100%;
+    display: flex;
+}
+ */
+
+footer {
+    height: auto;
+    background-color: #ff9f1c;
+    width: 100vw;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+}
+footer #info-gral-footer{
+    display: flex;
+    justify-content: space-around;
+}
+footer #info-gral-footer .info, footer #info-gral-footer .suscripcion{
+    margin: 1em;
+    padding: 0;
+    line-height: 1.3em;
+    font-size: 0.9em;
+}
+footer .copy{
+    text-align: center;
+    color: black;
+    margin-bottom: 1em;
+
+}
+footer #info-gral-footer .info h4, footer #info-gral-footer .suscripcion h4, footer #info-gral-footer .redes h4 {
+    margin-bottom: 0.5em;
+    font-variant: small-caps;
+    font-size: 1.3em;
+    letter-spacing: 0.2em;
+    font-family:'Alkatra', cursive;  
+}
+footer #info-gral-footer .info a, footer #info-gral-footer .contacto a {
+    text-decoration: none;
+    color: whitesmoke; 
+}
+
+footer #info-gral-footer .info li {
+    list-style-type: '>  ';  
+}
+footer #info-gral-footer .info li::marker{
+    font-size: 0.6em;
+}
+footer #info-gral-footer .info a:hover{
+    text-decoration: underline;
+    color: #0B3954;
+}
+footer #info-gral-footer .redes i{
+    color: #0B3954;
+}
+footer #info-gral-footer .redes {
+    margin-top: 1.8em;
+}
+.btn-whatsapp img{
+    width: 4.5em;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+footer #info-gral-footer .suscripcion input{
+    width: 50%;
+    border-radius: 0.2em;
+    padding: 0.3em;
+    height: 2.2em;
+    color: #0B3954;
+    outline: none;
+    font-size: 0.8em;
+    border: none;
+}
+footer #info-gral-footer .suscripcion input[type="submit"] {
+    width: auto;
+    height: 2.2em;
+    background-color: rgba(11, 57, 84, 1);
+    color: whitesmoke;
+}

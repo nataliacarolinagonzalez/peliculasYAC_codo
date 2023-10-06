@@ -1,79 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peliculas YACS</title>
+    <title>YACS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/stylesheet.css">
-
-    <!-- falta favicon -->
 </head>
-   
+
 <body>
-    
-        <div id="logo">
-            <!-- falta icono de la pagina -->
-        </div>
-    </div>
-    <div class="nav">
-        <a href="index.html"><img id="logoimg" src="#" alt="logo"></a>
-        <ul>
-            <a class="nav-sub" href="index.html">
-                <li>Inicio</li>
-            </a>
-            <a class="nav-sub" href="login.html">
-                <li>Log in</li>
-            </a>
-            <a class="nav-sub" href="contacto.html">
-                <li>Contacto</li>
-            </a>
-            <a class="nav-sub" href="carrito.html">
-                <li>Carrito</li>
-            </a>
-        </ul>
-    </div>
-        <header>
-        <div id="barra-busqueda">
-            <label for="busqueda">Buscar</label>
-            <input id="busqueda" type="text">
-        </div>
-        <div id="carrito">
-            <img src="./IMG/carrito.png" alt="">
-        </div>
+    <!-- /////////////////////////////////////////// NAV, MENU -->
+    <header>
+        <nav>
+            <a href="index.html"><img id="logoimg" src="#" alt="logo"></a>
+            <ul>
+                <a href="./index.html"><li>Inicio</li></a>
+                <!-- <a href="./login.html"><li>Log in</li></a> -->
+                <a href="./contacto.html"><li>Contacto</li></a>
+                <!-- <a href="./carrito.html"><li>Carrito</li></a> -->
+                <a href="./catalogo.html"><li>Catálogo</li></a>
+            </ul>   
+            <div id="search-tab">
+                    <input type="text" placeholder="Buscar..." maxlength="150" minlength="3">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button> 
+            </div> 
+            <div id="iconos">
+                <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+                <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
     </header>
-   
-    <main>
         
+    <main>
         <h1>Películas YACS</h1>
-       <img src="" alt="">
+        
     </main>
 
-
-<div class="footer">
     <footer>
-        <h4>Copyright 2023</h4>
-        <a href="#"><img src="img/facebook.png" alt=""></a><!--faltan links-->
-        <a href="#"><img src="img/instagram.png" alt=""></a><!--faltan links-->
-        <a href="#"><img src="img/linkedin.png" alt=""></a><!--faltan links-->
+        <div id="info-gral-footer">
+            <div class="info">
+                <h4>Información</h4>
+                <ul>
+                    <li><a href="#">¿Cómo comprar?</li></a>
+                    <li><a href="#">Preguntas Frecuentes</li></a>
+                    <li><a href="#">Pagos</li></a>
+                    <li><a href="#">Promociones</li></a>
+                </ul>
+            </div>
+            <div class="suscripcion">
+                <h4>Suscribite al Newsletter</h4>
+                <input type="email" placeholder="mimail@mail.com">
+                <input type="submit" value="Suscribirme">
+                <div class="redes">
+                    <h4>Seguinos</h4>
+                    <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div> 
+        <div class="copy">
+            <h6>© 2023 CG.</h6>
+        </div>  
     </footer>
-</div>
-    
-        
-    
 
-
-
-
-    
-</body>
-</html>
-
-
-
-
-      
-    
-    
-    
+    <script src="https://kit.fontawesome.com/ba0ece2d64.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

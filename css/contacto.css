@@ -1,65 +1,81 @@
-div#contacto{
-    margin: 50px auto;
-    background-color: #2ec4b6;
-    width: 65%;
-    border-radius: 5%;
-    padding: 20px 10px;
-    color: black;
+#formulario{
+    width: 50%;
+    margin: 0 auto;
+    background-color:#ff9f1c;
+    border-radius: 3%;
+    padding: 2em;
+    color: whitesmoke;
     font-weight: bold;
-    box-shadow: 1px 1px 5px black;
-    
+    box-shadow: 1px 1px 5px whitesmoke;
+    text-align: center;   
 }
-div h2{
-    margin-bottom: 40px;
-    text-align: center;
-    text-shadow: 1px 1px 2px gray;
+
+#formulario h2{
+    background-color:#0B3954;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-variant: small-caps;
+    font-weight: bold; 
+    font-size: 1em;
+    letter-spacing: 0.4em;
 }
-form input, textarea{
+
+#formulario label{
     display: block;
-    width: 70%;
-    margin-top: 10px;
-    box-shadow: 1px 1px 2px gray;
-    border-radius: 5px;
-    outline: none;
-    border: none;
+    margin-bottom: 0.5em;
+    font-size: 0.8em;
+    text-align: left;
 }
-form input{
-    height: 25px;
-    
-    
+
+ #formulario .pie-input{
+    width: initial;
+    display: inline;
 }
-form textarea{
-    height: 10%;
-}
-form label{
-    display: block;
-    margin-bottom: 20px;
-    font-size: 18px;
-    
-}
-form input[type="checkbox"]{
-    box-shadow: none;
-    width: 15px;
-    height: 15px;
+ #formulario #pie-button{
     display: inline-block;
-    margin-right: 10px;
-    
+    margin-top: 2em; 
 }
-form input[type="submit"]{
-    background-color: grey;
-    width: auto;
-    height: 30px;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 30px ;
-    color: antiquewhite;
-    box-shadow: 1px 1px 2px black;
+   
+#formulario input, #formulario textarea {
+    width: 100%;
+    border-radius: 0.3em;
+    border: 1px solid #0B3954;
+    padding: 0.6em;
+    margin-bottom: 1.3em;
+} 
+#formulario p{
+    font-size: 0.5em;
+    text-align: left;
 }
-form input[type="submit"]:hover{
-    background-color: lightcoral;
-    color: black;
-    transition: 1s;
+#formulario #pie-button button{
+    color: whitesmoke; 
+    border:solid 1px whitesmoke;
+    background-color: #0B3954;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1em;
+}   
+
+#formulario input:focus, textarea:focus{
+    background-color: whitesmoke;
+    color:#0B3954 ;
+    outline: none;
 }
-form input:focus, form textarea:focus{
-    box-shadow: 1px 1px 2px black;
+ #formulario #pie-button button:hover{
+    background-color: whitesmoke;
+    color: #0B3954;
+    border:solid 1px #0B3954;
+}
+
+#formulario input:invalid:focus, textarea:invalid:focus{
+    box-shadow: 3px 2px 5px #ec5151;}
+
+#formulario input:valid, textarea:valid{
+    box-shadow: 3px 2px 5px #0B3954;}
+
+@media screen and (max-width:768px){
+    #formulario{
+        margin-bottom: 18em;
+    };
 }
