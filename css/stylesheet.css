@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     width: 100%;
     background-color: black;
@@ -15,7 +14,6 @@ body {
     /* overflow-x: hidden; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 header{
     position: sticky;
     top: 0px; 
@@ -78,8 +76,7 @@ nav i{
     border: none;
     background-color: #0B3954;
 }
-
-
+/* ver */
 h1 {
     font-family: 'Dela Gothic One', cursive;
     letter-spacing: 0.8em;
@@ -88,6 +85,7 @@ h1 {
     text-shadow: 1px 1px 5px #ff9f1c;
     text-align: center;
 }
+/* ver */
 h3 {
     margin-top: 0px;
     margin-bottom: 1rem;
@@ -103,15 +101,13 @@ h3 {
 }
 
 
-
-
-
 /* .search-tab {
     display: flex;
     justify-content: flex-end;
 
 }
  */
+ 
 /* CARDS */
 main{
     width: 100%;
@@ -126,19 +122,24 @@ main{
 #cards {
     display: inline-block;
     border: none;
-    width: 20em;
-    height: 30em;
+    width: 25em;
+    height: 45em;
     padding: 0.5em;
     color:#0B3954;
     margin: 5em 1em;
     font-size: 0.9em;
-    box-shadow: 0px 0px 6px 0.5px #525a5f;
+    box-shadow: 0px 0px 6px 0.5px white;
     border-radius: 0.5em;
     overflow: hidden;
+    background-color: #ff9f1c;
 }
 #cards img {
+    /* width: 150%;
+    margin: 0 auto;
+    padding: 0; */
     width: 100%;
-   
+    margin: 0 auto;
+    padding: 0;
 }
 #cards:hover {
     transform: scale(1.3);
