@@ -56,6 +56,10 @@ nav i{
     margin: 0.5em;
 }
 
+#logoimg:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+}
 
 
 #iconos:hover {
