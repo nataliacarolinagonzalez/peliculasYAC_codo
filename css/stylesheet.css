@@ -47,7 +47,7 @@ nav li { /* conviene ser especifico q li son, xq si no tomas todos */
     
 }
 
-li:hover {
+nav li:hover {
     transition: 0.3s;
     transform: scale(1.2);
 }
@@ -56,16 +56,12 @@ nav i{
     margin: 0.5em;
 }
 
-#logoimg:hover{
+#logoimg:hover, #iconos:hover {
     transition: 0.3s;
     transform: scale(1.2);
 }
 
 
-#iconos:hover {
-    transition: 0.3s;
-    transform: scale(1.2);
-}
 #search-tab {
     display: flex;
     justify-content: space-around;
@@ -164,7 +160,7 @@ main{
     padding: 0;
 }
 #cards:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
     overflow: hidden;
     transition: 1.5s ease;
     
@@ -417,3 +413,36 @@ footer #info-gral-footer .suscripcion input[type="submit"] {
     background-color: rgb(98, 82, 53);
     color: whitesmoke;
 }
+
+
+/* animacion */
+/* @keyframes miMovimiento2 {
+    0%{
+        transform: translateX(10em);
+    }
+    50%{
+        transform: translateX(-10em);
+        
+    }
+    75%{
+        transform: translateX(20em);
+
+    }
+    100%{
+        transform: translateX(-20em);
+
+    }
+}
+#animacion-logo{
+    width: 20em;
+    margin-top: 2.5em;
+    margin-bottom: 5em;
+
+    animation-name: miMovimiento2;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-play-state: running; 
+} */
