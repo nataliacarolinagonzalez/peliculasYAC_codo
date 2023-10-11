@@ -15,16 +15,8 @@ $.getJSON("https://api.themoviedb.org/3/movie/now_playing?language=es&page=1&api
               /* '<p style="color:red;"> '+  idPelis +'</p>' + */
             '</section>')            
     } 
-    let busc = document.querySelector("#busqueda")
-    busc.insertAdjacentHTML ("afterbegin", 
-    '<section id="cards-busc">' +
-      '<div><img src="http://image.tmdb.org/t/p/w5001008042" alt=""></div>' + 
-      /* '<a href="./peliculas.html"><img src="http://image.tmdb.org/t/p/w500' + resultados[i].backdrop_path + '" alt=""></a>' + */
-      '<p style="margin:1.5em; "><span style="font-variant:small-caps; font-size:1em; font-weight:bold;">Resumen </span>: jdasksdjaskldjaskdjasjdasdlasdjlasjdlasjdasd</p>' +
-      /* '<p style="color:red;"> '+  idPelis +'</p>' + */
-    '</section>')
 
-
+    
 
     //cancelo evento automatico links
     /* let links = document.querySelectorAll("#cards a")
