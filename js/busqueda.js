@@ -22,15 +22,14 @@
 
 
 
-let borrar = document.getElementsByClassName(".cards-container");
 
 function searchAction() {
   valDeBusq = document.getElementById("input-busq").value;
   $.getJSON("https://api.themoviedb.org/3/search/movie?query="+valDeBusq+"&include_adult=false&language=es&page=1&api_key=da2bc34b7d1c815449e218aadeea9272",
     function (data) {
-      let resultados = data.results;
-
-      borrar;
+      const resultados = data.results;
+      // const elemento = document.querySelector("cards-container");
+      // document.removeChild(elemento);
       
       for (let i = 0; i < resultados.length; i++) {
         document.querySelector(".cards-container").insertAdjacentHTML(

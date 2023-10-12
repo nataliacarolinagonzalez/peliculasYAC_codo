@@ -23,8 +23,8 @@
                 <a href="./catalogo.html"><li>Catálogo</li></a>
             </ul>   
             <div id="search-tab">
-                    <input type="text" placeholder="Buscar..." maxlength="150" minlength="3">
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button> 
+                    <input id="input-busq" type="text" placeholder="Buscar..." maxlength="150" minlength="3">
+                    <button onclick="searchAction()"><i class="fa-solid fa-magnifying-glass"></i></button> 
             </div> 
             <div>
                 <a href="./login.html"><i id="iconos" class="fa-solid fa-user"></i></a>
@@ -35,7 +35,7 @@
         
     <main>
         <h1>Películas YAC</h1>
-        <div class="cards-container-catalogo">
+        <div class="cards-container">
         </div>
         
     </main>
@@ -71,6 +71,7 @@
     <script src="https://kit.fontawesome.com/ba0ece2d64.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/catalogo.js"></script>
+    <script src="js/busqueda.js"></script>
     
 </body>
 </html>
