@@ -21,7 +21,6 @@
 
 
 
-let borrar = document.getElementsByClassName(".cards-container");
 
 function searchAction() {
   valDeBusq = document.getElementById("input-busq").value;

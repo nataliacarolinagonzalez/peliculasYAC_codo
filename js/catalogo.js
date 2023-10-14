@@ -3,7 +3,7 @@ $.getJSON("https://api.themoviedb.org/3/trending/movie/day?language=es&api_key=d
     console.log(rdoCatalogo) 
     
     for(let i=0; i<rdoCatalogo.length; i++) {
-        document.querySelector('.cards-container-catalogo').insertAdjacentHTML ("afterbegin", 
+        document.querySelector('.cards-container').insertAdjacentHTML ("afterbegin", 
             '<section id="cards">' +
               '<h2 style="font-variant:small-caps; margin:1.5em;"> '+ rdoCatalogo[i].title +'</h2>'+
               '<div><img id="' +rdoCatalogo[i].id + '" src="http://image.tmdb.org/t/p/w500' + rdoCatalogo[i].backdrop_path + '" alt=""></div>' + 
