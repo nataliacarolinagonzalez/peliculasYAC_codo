@@ -21,7 +21,6 @@
 
 
 
-
 let borrar = document.getElementsByClassName(".cards-container");
 
 function searchAction() {
@@ -30,7 +29,6 @@ function searchAction() {
     function (data) {
       let resultados = data.results;
 
-      borrar;
       
       for (let i = 0; i < resultados.length; i++) {
         document.querySelector(".cards-container").insertAdjacentHTML(
