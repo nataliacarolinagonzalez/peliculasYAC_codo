@@ -1,4 +1,4 @@
- const settings = {
+/*  const settings = {
     async: true,
     crossDomain: true,
     url: 'https://api.themoviedb.org/3/search/movie?query=indiana&include_adult=false&language=es&page=1&api_key=da2bc34b7d1c815449e218aadeea9272',
@@ -12,7 +12,7 @@
   $.ajax(settings).done(function (response) {
     console.log(response);
   });
-
+ */
 
   
   // let variable = "monja" // recuperar valor input 
