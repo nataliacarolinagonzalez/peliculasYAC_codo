@@ -143,6 +143,10 @@
     width: 70%;
 }
 
+body{
+    background-image: url(/img/fondo.jpg);
+}
+
 @media screen and (max-width:768px){
     #formulario{
         margin-bottom: 18em;
