@@ -361,7 +361,7 @@ footer #info-gral-footer .info, footer #info-gral-footer .suscripcion{
 }
 footer .copy{
     text-align: center;
-    color: black;
+    color: white;
     margin-bottom: 1em;
 
 }
@@ -388,7 +388,7 @@ footer #info-gral-footer .info a:hover{
     color: #24303c;
 }
 footer #info-gral-footer .redes i{
-    color: #24303c;
+    color: white;
 }
 footer #info-gral-footer .redes {
     margin-top: 1.8em;
