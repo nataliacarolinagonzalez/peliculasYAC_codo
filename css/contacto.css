@@ -1,24 +1,27 @@
 #formulario{
     width: 50%;
     margin: 7em auto;
-    background-color: #d3bc60;
+    background-color: #24303c;
     border-radius: 3%;
     padding: 2em;
     color: whitesmoke;
     font-weight: bold;
-    box-shadow: 1px 1px 5px whitesmoke;
-    text-align: center;   
+    box-shadow: 1px 1px 5px gray;
+    text-align: center;  
+    border: solid orange;
+    font-family: calibri;
 }
 
 #formulario h2{
-    background-color: rgb(98, 82, 53);
+    background-color: #24303c;
     margin-bottom: 2em;
     padding: 0.5em;
-    border-radius: 0.5em;
+    border-radius: 4px;
     font-variant: small-caps;
     font-weight: bold; 
-    font-size: 1em;
-    letter-spacing: 0.4em;
+    font-size: 22px;
+    font-family: calibri;
+    
 }
 
 #formulario label{
@@ -40,7 +43,7 @@
 #formulario input, #formulario textarea {
     width: 100%;
     border-radius: 0.3em;
-    border: 1px solid rgb(98, 82, 53);
+    border: 1px solid #1f53c5;
     padding: 0.6em;
     margin-bottom: 1.3em;
 } 
@@ -50,8 +53,8 @@
 }
 #formulario #pie-button button{
     color: whitesmoke; 
-    border:solid 1px whitesmoke;
-    background-color: rgb(98, 82, 53);
+    border:solid 4px #1f53c5;
+    background-color: #1f53c5;
     padding: 0.5em;
     border-radius: 0.5em;
     font-size: 1em;
@@ -73,6 +76,72 @@
 
 #formulario input:valid, textarea:valid{
     box-shadow: 3px 2px 5px ;}
+
+    .formulario-register{
+        width: 400px;
+        background-color: #24303c;
+        padding: 30px;
+        margin: 0;
+        margin-top: 0px;
+        border-radius: 20px;
+        font-family: Calibri;
+        color: white;
+        border: solid orange;
+
+    }
+    .formulario-register h4 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        
+    }
+    .control {
+        width: 100%;
+        background-color: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #1f53c5;
+        font-family: calibri;
+        font-size: 18px;
+        color: white;
+    
+    }
+.formulario-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    
+
+}
+.formulario-register a {
+    color: white;
+    text-decoration: none;
+}
+.formulario-register a:hover {
+    color: white;
+    text-decoration: underline;
+
+}
+.formulario-register .boton {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color:white;
+    margin: 16px, 0;
+    font-size: 16px;
+
+}
+
+.cajas{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 0.5em;
+    width: 70%;
+}
 
 @media screen and (max-width:768px){
     #formulario{

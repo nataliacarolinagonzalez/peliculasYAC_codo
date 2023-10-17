@@ -22,7 +22,7 @@ header{
     font-family:'Alkatra', cursive;
 }
 nav {
-    background-color: #d3bc60;
+    background-color: #24303c;
     color: white;
     margin: 0;
     height: 5em;
@@ -30,7 +30,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: end;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px gray;
     transition: 0.3s;
 
 }
@@ -65,24 +65,25 @@ nav i{
 #search-tab {
     display: flex;
     justify-content: space-around;
-    border: 1px solid rgb(98, 82, 53);
-    border-radius: 0.2em;
+    border: 1px solid orange;
+    border-radius: 0.4em;
     align-items: center;
 }
 #search-tab  button i{
     color: whitesmoke;
+    
 }
 #search-tab input {
-    border-radius: 0.2em;
+    border-radius: 0.4em 0 0 0.4em;
     padding: 1em;
     height: 2.5em;
-    color: rgb(98, 82, 53);
+    color: #24303c;
     outline: none;
     font-size: 1em;
     border: none;
 }
 #search-tab  input:focus, #search-tab button:active, .suscripcion input:focus {
-    box-shadow: 0px 0px 5px 1px rgb(98, 82, 53);
+    box-shadow: 0px 0px 5px 1px #24303c;
 }
 
 #search-tab  button {
@@ -90,16 +91,17 @@ nav i{
     width: 40px;
     height: 40px;
     outline: none;
-    border: none;
-    background-color: rgb(98, 82, 53); 
+    border: solid gray;
+    background-color: orange; 
+    border-radius: 0 0.4em 0.4em 0;
 }
 /* ver */
 h1 {
     font-family: 'Dela Gothic One', cursive;
     letter-spacing: 0.8em;
     font-size: 3em;
-    margin: 1.5em auto;
-    text-shadow: 2px 2px 5px #d3bc60;
+    margin: 0.5em auto;
+    text-shadow: 2px 2px 5px orange;
     text-align: center;
 }
 /* ver */
@@ -140,15 +142,16 @@ main{
     display: inline-block;
     border: none;
     width: 25em;
-    height: 45em;
+    height: 55em;
     padding: 0.5em;
-    margin: 5em 1em;
+    margin: 2.5em 1em;
     font-size: 0.9em;
-    box-shadow: 0px 0px 6px 0.5px white;
+    box-shadow: 0px 0px 6px 0.5px orange;
     border-radius: 0.5em;
     overflow: hidden;
-    background-color: #d3bc60;
-    text-align: justify;
+    background-color: #24303c;
+    
+    color: white;
 
 }
 #cards img {
@@ -339,7 +342,7 @@ main{
 
 footer {
     height: auto;
-    background-color: #d3bc60;;
+    background-color: #24303c;
     width: 100vw;
     color: whitesmoke;
     position: absolute;
@@ -382,10 +385,10 @@ footer #info-gral-footer .info li::marker{
 }
 footer #info-gral-footer .info a:hover{
     text-decoration: underline;
-    color: rgb(98, 82, 53);
+    color: #24303c;
 }
 footer #info-gral-footer .redes i{
-    color: rgb(98, 82, 53);
+    color: #24303c;
 }
 footer #info-gral-footer .redes {
     margin-top: 1.8em;
@@ -401,7 +404,7 @@ footer #info-gral-footer .suscripcion input{
     border-radius: 0.2em;
     padding: 0.3em;
     height: 2.2em;
-    color: rgb(98, 82, 53);
+    color: #24303c;
     outline: none;
     font-size: 0.8em;
     border: none;
@@ -410,33 +413,33 @@ footer #info-gral-footer .suscripcion input{
 footer #info-gral-footer .suscripcion input[type="submit"] {
     width: auto;
     height: 2.2em;
-    background-color: rgb(98, 82, 53);
-    color: whitesmoke;
+    background-color: orange;
+    border: solid gray;
 }
 
 
 /* animacion */
-/* @keyframes miMovimiento2 {
+@keyframes miMovimiento2 {
     0%{
-        transform: translateX(10em);
+        transform: translateX(-10em);
     }
     50%{
-        transform: translateX(-10em);
+        transform: translateX(20em);
         
     }
     75%{
-        transform: translateX(20em);
+        transform: translateX(-20em);
 
     }
     100%{
-        transform: translateX(-20em);
+        transform: translateX(20em);
 
     }
 }
 #animacion-logo{
-    width: 20em;
-    margin-top: 2.5em;
-    margin-bottom: 5em;
+    width: 10em;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
 
     animation-name: miMovimiento2;
     animation-duration: 5s;
@@ -445,4 +448,4 @@ footer #info-gral-footer .suscripcion input[type="submit"] {
     animation-direction: alternate;
     animation-fill-mode: both;
     animation-play-state: running; 
-} */
+}
