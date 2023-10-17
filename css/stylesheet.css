@@ -13,7 +13,8 @@ body {
     /* overflow-x: hidden; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url(/img/fondo.jpg);
-}
+    background-attachment:fixed;
+    }
 header{
     position: sticky;
     top: 0px; 
