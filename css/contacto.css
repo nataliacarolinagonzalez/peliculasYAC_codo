@@ -1,86 +1,105 @@
-#formulario{
-    width: 50%;
-    margin: 7em auto;
-    background-color: #24303c95;
+.formulario{
+    width: 60%;
+    margin: 5em auto;
+    background-color: #FFCC00; 
+    opacity: 0.8;
     border-radius: 3%;
     padding: 2em;
-    color: white;
+    color: rgb(98, 82, 53);
     font-weight: bold;
-    box-shadow: 1px 1px 5px gray;
+    box-shadow: 1px 1px 5px whitesmoke;
     text-align: center;  
-    border: solid orange;
-    font-family: calibri;
 }
 
-#formulario h2{
+.formulario h3{
     background-color: #24303c;
     margin-bottom: 2em;
     padding: 0.5em;
     border-radius: 4px;
     font-variant: small-caps;
-    font-weight: bold; 
-    font-size: 22px;
-    font-family: calibri;
+    letter-spacing: 0.3em;
+    color: whitesmoke;
     
 }
 
-#formulario label{
+.formulario label{
     display: block;
     margin-bottom: 0.5em;
     font-size: 0.8em;
     text-align: left;
 }
 
- #formulario .pie-input{
+.formulario .pie-input{
     width: initial;
     display: inline;
 }
- #formulario #pie-button{
+.formulario #pie-button{
     display: inline-block;
     margin-top: 2em; 
 }
    
-#formulario input, #formulario textarea {
+.formulario input, .formulario textarea {
     width: 100%;
     border-radius: 0.3em;
     border: 1px solid grey;
     padding: 0.6em;
     margin-bottom: 1.3em;
+    
 } 
-#formulario p{
-    font-size: 0.5em;
+.formulario p{
+    font-size: 0.6em;
     text-align: left;
 }
-#formulario #pie-button button{
+.formulario #pie-button button{
     color: whitesmoke; 
-    background-color: #1f53c5;
+    background-color: rgb(98, 82, 53);
     padding: 0.5em;
     border-radius: 0.5em;
+    border: none;
+    margin: 0 1em;
     font-size: 1em;
+    
 }   
 
-#formulario input:focus, textarea:focus{
+.formulario input:focus, .formulario textarea:focus{
     background-color: whitesmoke;
     color:rgb(98, 82, 53) ;
     outline: none;
 }
- #formulario #pie-button button:hover{
+.formulario #pie-button button:hover{
     background-color: whitesmoke;
     color: rgb(98, 82, 53);
     border:solid 1px rgb(98, 82, 53);
 }
 
-#formulario input:invalid:focus, textarea:invalid:focus{
-    box-shadow: 3px 2px 5px lightcoral;}
+.formulario input:focus, .formulario textarea:focus{
+    box-shadow: 3px 2px 5px #24303c
+}
+/* LOGIN - REGISTRO */
+.formulario #link-login, .formulario #link-registro{
+    display: block;
+    margin-top: 1.5em;
+    font-size: 1em;
+    text-align: right;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-right: 0.5em;
+}
 
-#formulario input:valid, textarea:valid{
-    box-shadow: 3px 2px 5px lightgreen;}
+.formulario #link-login:hover, .formulario #link-registro:hover{
+    text-decoration: underline;
+    color: whitesmoke; 
+}
+#registro{
+    display: none;
+}
 
-#formulario input[type="checkbox"]:valid, #formulario input[type="checkbox"]:invalid{
-    box-shadow: none}
+
+
 
 /* ver, se repiten todos los selectores, no hace falta clase control, sacar y poner arriba */    
-    .formulario-register{
+    /* .formulario-register{
         width: 400px;
         background-color: #24303c95;
         padding: 30px;
@@ -89,28 +108,28 @@
         border-radius: 20px;
         font-family: Calibri;
         color: white;
-        border: solid orange;
+        border: solid #FFCC00;
 
-    }
-    .formulario-register h4 {
+    } */
+    /* .formulario-register h4 {
         font-size: 22px;
         margin-bottom: 20px;
         
-    }
-    .control {
+    } */
+    /* .control {
         width: 100%;
         background-color: #24303c;
         padding: 10px;
         border-radius: 4px;
         margin-bottom: 16px;
-        /* border: 1px solid #1f53c5; */
+        border: 1px solid #1f53c5; 
         font-family: calibri;
         font-size: 18px;
         color: white;
         outline: none;
     
-    }
-.formulario-register p {
+    } */
+/* .formulario-register p {
     height: 40px;
     text-align: center;
     font-size: 18px;
@@ -145,11 +164,7 @@
     gap: 0.5em;
     padding: 0.5em;
     width: 70%;
-}
-
-body{
-    background-image: url(/img/fondo.jpg); /* ver */
-}
+} */
 
 /* @media screen and (max-width:768px){
     #formulario{

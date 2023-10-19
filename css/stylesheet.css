@@ -10,10 +10,9 @@ body {
     position: relative;
     padding-bottom: 15em;
    /*  min-height: 100vh; */
-    /* overflow-x: hidden; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(/img/fondo.jpg);
-    background-attachment:fixed;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    background: url(../img/fondo.jpg);
     }
 header{
     position: sticky;
@@ -66,7 +65,7 @@ nav i{
 #search-tab {
     display: flex;
     justify-content: space-around;
-    border: 1px solid orange;
+    border: 1px solid #FFCC00;
     border-radius: 0.2em;
     align-items: center;
     background-color: whitesmoke;
@@ -93,7 +92,7 @@ nav i{
     height: 40px;
     outline: none;
     border: none;
-    background-color: orange; 
+    background-color: #FFCC00; 
     border-radius: 0 0.2em 0.2em 0;
 }
 /* ver */
@@ -102,11 +101,11 @@ h1 {
     letter-spacing: 0.8em;
     font-size: 3em;
     margin: 1em auto;
-    text-shadow: 2px 2px 5px orange;
+    text-shadow: 2px 2px 5px #FFCC00;
     text-align: center;
 }
 /* ver */
-h3 {
+  /* h3 {
     margin-top: 0px;
     margin-bottom: 1rem;
     color: white;
@@ -114,24 +113,18 @@ h3 {
     border-width: 0px 3px 3px 3px;
     border-color: aliceblue;
     border-style: solid;
-    /* border-color: aliceblue;
+  border-color: aliceblue;
     border-bottom-style: solid;
     border-left: solid;
-    border-right: solid; */
-}
+    border-right: solid; 
+}*/
 
-
-/* .search-tab {
-    display: flex;
-    justify-content: flex-end;
-
-}
- */
  
 /* CARDS */
 main{
     width: 100%;
     text-align: center;
+    
 }
 .cards-container{
     display: flex;
@@ -147,7 +140,7 @@ main{
     padding: 0.5em;
     margin: 2.5em 1em;
     font-size: 0.9em;
-    box-shadow: 0px 0px 6px 0.5px orange;
+    box-shadow: 0px 0px 6px 0.5px #FFCC00;
     border-radius: 0.5em;
     overflow: hidden;
     background-color: #24303c95;
@@ -176,97 +169,6 @@ main{
     width: 6.8em;
     
 }
-
-/* 
-#logo {
-    display: block;
-    background-color: black;
-}
-
-#logoimg {
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-bottom: 1px;
-    width: 70px;
-    height: 30px;
-} */
-
-
-/* .imagen-peli {
-    margin-bottom: 0px;
-    width: 20rem;
-    height: 25rem;
-    padding: 1rem, 1rem;
-    border: 2px, solid, white;
-
-}
- */
-
-
-/* #cards{
-    
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    text-align: center;
-    background-color: wheat;
-    width: 95%;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 10px;
-    
-
-}
-.imagenes{
-    float: left;
-    width: 20rem;
-    height: 25rem;
-    border-radius: 20px;
-    margin: 50px;
-    border: 5px solid white;
-}
-
-
-.descripcion-peli{
-    background-color: #4c7c77;
-    margin-top: 5%;
-    margin: 1rem;
-    text-align: left;
-    padding: 1rem;
-    text-align: justify;
-    
-    
-}
- */
-
-
-/* .trailer{
-    display: block;
-    margin-top: 5%;
-    width: 450px;
-    height: 256px;
-   
-
-
-}
-
-.cardtext{
-    max-width: 50%;
-}
-#desc-name{
-    
-    margin: 0px;
-    font-size: 2rem;
-    color: black;
-
-    
-
-}
-
-#sino-desc-h2{
-    align-self: center;
-    margin: 0px;
-} */
 
 
 /* MEDIA QUERIES */
@@ -363,7 +265,7 @@ footer #info-gral-footer .info, footer #info-gral-footer .suscripcion{
 footer .copy{
     text-align: center;
     color: white;
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
 
 }
 footer #info-gral-footer .info h4, footer #info-gral-footer .suscripcion h4, footer #info-gral-footer .redes h4 {
@@ -371,7 +273,8 @@ footer #info-gral-footer .info h4, footer #info-gral-footer .suscripcion h4, foo
     font-variant: small-caps;
     font-size: 1.3em;
     letter-spacing: 0.2em;
-    font-family:'Alkatra', cursive;  
+    font-family:'Alkatra', cursive; 
+    text-shadow: 2px 2px 5px gray; 
 }
 footer #info-gral-footer .info a, footer #info-gral-footer .contacto a {
     text-decoration: none;
@@ -386,7 +289,7 @@ footer #info-gral-footer .info li::marker{
 }
 footer #info-gral-footer .info a:hover{
     text-decoration: underline;
-    color: #24303c;
+    color: #FFCC00;
 }
 footer #info-gral-footer .redes i{
     color: white;
@@ -414,9 +317,9 @@ footer #info-gral-footer .suscripcion input{
 footer #info-gral-footer .suscripcion input[type="submit"] {
     width: auto;
     height: 2.2em;
-    background-color: orange;
-    border: solid gray;
+    background-color: #FFCC00;
     border: none;
+    outline: none;
     font-weight: bold;
 }
 
