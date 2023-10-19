@@ -15,7 +15,7 @@ btnRegistro.addEventListener("click", function(){
 })
 
 
-
+//falta ver q funque 
 
 
 function validarLogin (e){
