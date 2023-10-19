@@ -67,15 +67,15 @@ nav i{
     display: flex;
     justify-content: space-around;
     border: 1px solid orange;
-    border-radius: 0.4em;
+    border-radius: 0.2em;
     align-items: center;
+    background-color: whitesmoke;
 }
 #search-tab  button i{
     color: whitesmoke;
     
 }
 #search-tab input {
-    border-radius: 0.4em 0 0 0.4em;
     padding: 1em;
     height: 2.5em;
     color: #24303c;
@@ -92,16 +92,16 @@ nav i{
     width: 40px;
     height: 40px;
     outline: none;
-    border: solid gray;
+    border: none;
     background-color: orange; 
-    border-radius: 0 0.4em 0.4em 0;
+    border-radius: 0 0.2em 0.2em 0;
 }
 /* ver */
 h1 {
     font-family: 'Dela Gothic One', cursive;
     letter-spacing: 0.8em;
     font-size: 3em;
-    margin: 0.5em auto;
+    margin: 1em auto;
     text-shadow: 2px 2px 5px orange;
     text-align: center;
 }
@@ -416,6 +416,8 @@ footer #info-gral-footer .suscripcion input[type="submit"] {
     height: 2.2em;
     background-color: orange;
     border: solid gray;
+    border: none;
+    font-weight: bold;
 }
 
 

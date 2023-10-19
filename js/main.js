@@ -1,4 +1,4 @@
-let idPelis
+//let idPelis
 
 $.getJSON("https://api.themoviedb.org/3/movie/now_playing?language=es&page=1&api_key=da2bc34b7d1c815449e218aadeea9272", function (data){
     let resultados = data.results

@@ -37,21 +37,21 @@
     <main>
         <!-- <h1>Películas YAC</h1> -->
         <div id="formulario">
-            <h2>Fomulario de Contacto</h2>
-            <form action="https://formspree.io/f/mnqyrlvj" method="post">
-                <label  for="nombre">Nombre y Apellido: *</label>
-                <input class="control" maxlength="40" minlength="3" name="nombre" type="text" required>
-                <label for="tel">Teléfono *:</label>
-                <input class="control"  maxlength="10" name="tel" type="tel" placeholder="Código de área y número" required>
-                <label for="Email">E-mail: *</label>
-                <input  class="control" name="email" type="email" placeholder="Ej: mail@gmail.com" required> 
-                <label for="acercaDe">Comentarios</label>
-                <textarea class="control" name="acercaDe" id="acercaDe" cols="20" rows="10" maxlength="300" placeholder="Escribí tu consulta"></textarea>   
-                <input class="control" class="pie-input" name="condiciones" value="acepta" type="checkbox" required>
+            <h2>Formulario de Contacto</h2>
+            <form action="https://formspree.io/f/mvonjkay" method="post">
+                <label  for="nombre">Nombre y Apellido*</label>
+                <input name="nombre" type="text">
+                 <label for="tel">Teléfono*</label>
+                <input name="tel" type="tel" placeholder="Código de área y número">
+                <label for="Email">E-mail*</label>
+                <input  name="email" type="text" placeholder="Ej: mail@gmail.com"> 
+                <label for="acercaDe">Comentarios*</label>
+                <textarea name="acercaDe" id="acercaDe" cols="20" rows="10"  placeholder="Escribí tu consulta"></textarea>   
+                <input class="pie-input" name="condiciones" value="acepta" type="checkbox">
                 <label class="pie-input" for="condiciones">Acepto las condiciones*</label>
                 <p>*: campo obligatorio.</p>
                 <div id="pie-button">
-                    <button>Enviar</button>
+                    <button type="submit">Enviar</button>
                     <button  type="reset"> Restablecer</button>     
             </form>  
         </div> 
@@ -87,6 +87,7 @@
 
     <script src="https://kit.fontawesome.com/ba0ece2d64.js"></script>
     <script src="main.js"></script>
+    <script src="contacto.js"></script>
 </body>
 </html>
 

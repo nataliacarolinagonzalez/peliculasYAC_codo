@@ -43,7 +43,7 @@
 #formulario input, #formulario textarea {
     width: 100%;
     border-radius: 0.3em;
-    border: 1px solid #1f53c5;
+    border: 1px solid grey;
     padding: 0.6em;
     margin-bottom: 1.3em;
 } 
@@ -53,7 +53,6 @@
 }
 #formulario #pie-button button{
     color: whitesmoke; 
-    border:solid 4px #1f53c5;
     background-color: #1f53c5;
     padding: 0.5em;
     border-radius: 0.5em;
@@ -72,11 +71,15 @@
 }
 
 #formulario input:invalid:focus, textarea:invalid:focus{
-    box-shadow: 3px 2px 5px ;}
+    box-shadow: 3px 2px 5px lightcoral;}
 
 #formulario input:valid, textarea:valid{
-    box-shadow: 3px 2px 5px ;}
+    box-shadow: 3px 2px 5px lightgreen;}
 
+#formulario input[type="checkbox"]:valid, #formulario input[type="checkbox"]:invalid{
+    box-shadow: none}
+
+/* ver, se repiten todos los selectores, no hace falta clase control, sacar y poner arriba */    
     .formulario-register{
         width: 400px;
         background-color: #24303c95;
@@ -100,10 +103,11 @@
         padding: 10px;
         border-radius: 4px;
         margin-bottom: 16px;
-        border: 1px solid #1f53c5;
+        /* border: 1px solid #1f53c5; */
         font-family: calibri;
         font-size: 18px;
         color: white;
+        outline: none;
     
     }
 .formulario-register p {
@@ -144,11 +148,12 @@
 }
 
 body{
-    background-image: url(/img/fondo.jpg);
+    background-image: url(/img/fondo.jpg); /* ver */
 }
 
-@media screen and (max-width:768px){
+/* @media screen and (max-width:768px){
     #formulario{
         margin-bottom: 18em;
     };
 }
+ */
