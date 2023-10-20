@@ -133,9 +133,9 @@ main{
 #cards{
     display: inline-block;
     border: none;
-    width: 25em;
-    height: 55em;
-    padding: 0.5em;
+    width: 20em;
+    height: 30em;
+    /* padding: 0.5em; */
     margin: 2.5em 1em;
     font-size: 0.9em;
     box-shadow: 0px 0px 6px 0.5px #FFCC00;
@@ -146,34 +146,39 @@ main{
 }
 
 #cards-peliculas {
-    display: inline-block;
     border: none;
-    width: 90%;
-    height: auto;
+    width: 100%;
     padding: 0.5em;
-    margin: 2.5em 1em;
+    margin: 2em 1em;
     font-size: 0.9em;
     box-shadow: 0px 0px 6px 0.5px #FFCC00;
     border-radius: 0.5em;
-    overflow: hidden;
     background-color: #24303c95;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
-
-
+#cards-peliculas #info-genero{
+    border: 1px solid red;
+}
+#cards-peliculas #info-titulo{
+    border: 1px solid yellow;
+}
+#cards-peliculas #poster{
+    border: 1px solid green;
+}
 
 #cards img{
-    /* width: 150%;
-    margin: 0 auto;
-    padding: 0; */
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
+    width: 100% ;
+    /* padding: 0;
+    margin: 0; */
 }
 #cards-peliculas img {
-    width: 40em;
-    margin: 0 auto;
-    padding: 0; 
+    width: 20em;
+    /* margin: 0 auto;
+    padding: 0; */ 
 }
 
 

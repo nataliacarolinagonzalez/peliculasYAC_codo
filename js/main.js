@@ -31,8 +31,8 @@ fetch("https://api.themoviedb.org/3/movie/now_playing?language=es&page=1&api_key
     for(let i=0; i<resultados.length; i++) {
       document.querySelector('.cards-container').insertAdjacentHTML ("afterbegin", 
           '<section id="cards">' +
-            '<h2 style="font-variant:small-caps; margin:1.5em;"> '+ resultados[i].title +'</h2>'+
-            '<div id="link-peli"><img id="' +resultados[i].id + '" src="http://image.tmdb.org/t/p/w500' + resultados[i].backdrop_path + '" alt=""></div>'  +
+            /* '<h2 style="font-variant:small-caps; margin:1.5em;"> '+ resultados[i].title +'</h2>'+ */
+            '<div id="link-peli"><img id="' +resultados[i].id + '" src="http://image.tmdb.org/t/p/w500' + resultados[i].poster_path + '" alt=""></div>'  +
           '</section>')            
   }
   let imgPeliculas = document.querySelectorAll("#cards img")
@@ -46,14 +46,16 @@ fetch("https://api.themoviedb.org/3/movie/now_playing?language=es&page=1&api_key
         .then(datos => {
           console.log(datos)
           document.querySelector('.cards-container').innerHTML = ""
+          document.querySelector("main h1").textContent = ""
             document.querySelector('.cards-peliculas').insertAdjacentHTML ("afterbegin", 
                 '<section id="cards-peliculas">' +
-                  '<div id="link-peli"><img id="' +datos.id + '" src="http://image.tmdb.org/t/p/w500' + datos.backdrop_path + '" alt=""></div>'  +
-                  '<h2 style="font-variant:small-caps; margin:1.5em;"> '+ datos.title +'</h2>'+
-                  '<h3 style="font-variant:small-caps; margin:1.5em;"> '+ datos.tagline +'</h3>'+
-                  '<p style="margin:1.5em; "><span style="font-variant:small-caps; font-size:1em; font-weight:bold;">Género </span>: '+  datos.genres[0].name +'</p>' +
-                  '<p style="margin:1.5em; "><span style="font-variant:small-caps; font-size:1em; font-weight:bold;">Estreno </span>: '+  datos.release_date +'</p>' +
-                  '<p style="margin:1.5em; "><span style="font-variant:small-caps; font-size:1em; font-weight:bold;">Resumen </span>: '+  datos.overview +'</p>' +
+                  '<div id="poster"><img id="' +datos.id + '" src="http://image.tmdb.org/t/p/w500' + datos.poster_path + '" alt=""></div>'  +
+                  '<div id="info-titulo"><h2> '+ datos.title +'</h2><h3>'+ datos.tagline + '</h3><p>'+  datos.overview +'</p></div>' + 
+                  '<div id="info-genero"><p><span> Género </span>: '+  datos.genres[0].name +'</p><p><span> Estreno </span>: '+  datos.release_date +'</p></div>'+
+                  /* '<div><h3 style="font-variant:small-caps; margin:1.5em;"> '+ datos.tagline +'</h3></div>'+ */
+                  /* '<div><p style="margin:1.5em; "><span style="font-variant:small-caps; font-size:1em; font-weight:bold;">Género </span>: '+  datos.genres[0].name +'</p></div>' +
+                  /* '<div><p style="margin:1.5em; "><span style="font-variant:small-caps; font-size:1em; font-weight:bold;">Estreno </span>: '+  datos.release_date +'</p></div>' + */
+                  /* '<div><p style="margin:1.5em; "><span style="font-variant:small-caps; font-size:1em; font-weight:bold;">Resumen </span>: '+  datos.overview +'</p></div>' + */
                 '</section>')            
                 
 
