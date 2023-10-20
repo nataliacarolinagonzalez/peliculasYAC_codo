@@ -1,3 +1,23 @@
+let containerPelicula = document.querySelector('.cards-container-pelicula')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* $.getJSON("https://api.themoviedb.org/3/movie/"+idPelis+"?language=es&api_key=da2bc34b7d1c815449e218aadeea9272", function (data){
     console.log(idPelis)
 

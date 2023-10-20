@@ -87,17 +87,18 @@ function searchAction() {
 
 
 
-let borrar = document.getElementsByClassName(".cards-container");
+
 
 function searchAction() {
   valDeBusq = document.getElementById("input-busq").value;
   $.getJSON("https://api.themoviedb.org/3/search/movie?query="+valDeBusq+"&include_adult=false&language=es&page=1&api_key=da2bc34b7d1c815449e218aadeea9272",
     function (data) {
       let resultados = data.results;
-
+      
+      document.querySelector(".cards-container").innerHTML = ""
       
       for (let i = 0; i < resultados.length; i++) {
-        document.querySelector(".cards-container").insertAdjacentHTML(
+        document.querySelector(".cards-container2").insertAdjacentHTML(
           "afterbegin",
           '<section id="cards">' +
             '<h2 style="font-variant:small-caps; margin:1.5em;"> ' +
@@ -117,12 +118,6 @@ function searchAction() {
         );
       }
       
-
-
-
-
-
-
 
 
 

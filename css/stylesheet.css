@@ -34,11 +34,9 @@ nav {
     transition: 0.3s;
 
 }
-nav li { /* conviene ser especifico q li son, xq si no tomas todos */
+nav li { 
     display: inline-block;
     color: rgb(255, 255, 255);
-    /* background-color: #423c35; */
-   /*  border-radius: 10%; */
     margin: 2em;
     font-variant: small-caps;
     font-size: 1.3em;
@@ -56,7 +54,7 @@ nav i{
     margin: 0.5em;
 }
 
-#logoimg:hover, #iconos:hover {
+#logoimg:hover, #iconos:hover, footer #info-gral-footer .redes i:hover  {
     transition: 0.3s;
     transform: scale(1.2);
 }
@@ -126,13 +124,13 @@ main{
     text-align: center;
     
 }
-.cards-container{
+.cards-container, .cards-peliculas{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#cards {
+#cards{
     display: inline-block;
     border: none;
     width: 25em;
@@ -144,11 +142,27 @@ main{
     border-radius: 0.5em;
     overflow: hidden;
     background-color: #24303c95;
-    
     color: white;
-
 }
-#cards img {
+
+#cards-peliculas {
+    display: inline-block;
+    border: none;
+    width: 90%;
+    height: auto;
+    padding: 0.5em;
+    margin: 2.5em 1em;
+    font-size: 0.9em;
+    box-shadow: 0px 0px 6px 0.5px #FFCC00;
+    border-radius: 0.5em;
+    overflow: hidden;
+    background-color: #24303c95;
+    color: white;
+}
+
+
+
+#cards img{
     /* width: 150%;
     margin: 0 auto;
     padding: 0; */
@@ -156,6 +170,13 @@ main{
     margin: 0 auto;
     padding: 0;
 }
+#cards-peliculas img {
+    width: 40em;
+    margin: 0 auto;
+    padding: 0; 
+}
+
+
 #cards:hover {
     transform: scale(1.2);
     overflow: hidden;
@@ -269,7 +290,7 @@ footer .copy{
 
 }
 footer #info-gral-footer .info h4, footer #info-gral-footer .suscripcion h4, footer #info-gral-footer .redes h4 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8em;
     font-variant: small-caps;
     font-size: 1.3em;
     letter-spacing: 0.2em;
@@ -282,7 +303,8 @@ footer #info-gral-footer .info a, footer #info-gral-footer .contacto a {
 }
 
 footer #info-gral-footer .info li {
-    list-style-type: '>  ';  
+    list-style-type: '>  '; 
+    margin-bottom: 0.4em; 
 }
 footer #info-gral-footer .info li::marker{
     font-size: 0.6em;
@@ -293,7 +315,10 @@ footer #info-gral-footer .info a:hover{
 }
 footer #info-gral-footer .redes i{
     color: white;
+    font-size: 1.1em;
+    margin-right: 1em;
 }
+
 footer #info-gral-footer .redes {
     margin-top: 1.8em;
 }

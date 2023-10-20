@@ -1,13 +1,13 @@
 .formulario{
     width: 60%;
     margin: 5em auto;
-    background-color: #FFCC00; 
+    background-color: #24303c95; 
     opacity: 0.8;
     border-radius: 3%;
     padding: 2em;
-    color: rgb(98, 82, 53);
+    color: whitesmoke;
     font-weight: bold;
-    box-shadow: 1px 1px 5px whitesmoke;
+    box-shadow: 0px 0px 6px 0.5px #FFCC00;
     text-align: center;  
 }
 
@@ -51,8 +51,8 @@
     text-align: left;
 }
 .formulario #pie-button button{
-    color: whitesmoke; 
-    background-color: rgb(98, 82, 53);
+    color: #24303c; 
+    background-color: #FFCC00;
     padding: 0.5em;
     border-radius: 0.5em;
     border: none;
@@ -62,14 +62,13 @@
 }   
 
 .formulario input:focus, .formulario textarea:focus{
-    background-color: whitesmoke;
-    color:rgb(98, 82, 53) ;
+    background-color: #24303c;
+    color:#FFCC00;
     outline: none;
 }
 .formulario #pie-button button:hover{
-    background-color: whitesmoke;
-    color: rgb(98, 82, 53);
-    border:solid 1px rgb(98, 82, 53);
+    background-color: #24303c ;
+    color:#FFCC00;
 }
 
 .formulario input:focus, .formulario textarea:focus{
@@ -85,6 +84,7 @@
     outline: none;
     background-color: transparent;
     margin-right: 0.5em;
+    color:#FFCC00;
 }
 
 .formulario #link-login:hover, .formulario #link-registro:hover{
@@ -94,81 +94,3 @@
 #registro{
     display: none;
 }
-
-
-
-
-/* ver, se repiten todos los selectores, no hace falta clase control, sacar y poner arriba */    
-    /* .formulario-register{
-        width: 400px;
-        background-color: #24303c95;
-        padding: 30px;
-        margin: 0;
-        margin-top: 0px;
-        border-radius: 20px;
-        font-family: Calibri;
-        color: white;
-        border: solid #FFCC00;
-
-    } */
-    /* .formulario-register h4 {
-        font-size: 22px;
-        margin-bottom: 20px;
-        
-    } */
-    /* .control {
-        width: 100%;
-        background-color: #24303c;
-        padding: 10px;
-        border-radius: 4px;
-        margin-bottom: 16px;
-        border: 1px solid #1f53c5; 
-        font-family: calibri;
-        font-size: 18px;
-        color: white;
-        outline: none;
-    
-    } */
-/* .formulario-register p {
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-    
-
-}
-.formulario-register a {
-    color: white;
-    text-decoration: none;
-}
-.formulario-register a:hover {
-    color: white;
-    text-decoration: underline;
-
-}
-.formulario-register .boton {
-    width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color:white;
-    margin: 16px, 0;
-    font-size: 16px;
-
-}
-
-.cajas{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    gap: 0.5em;
-    padding: 0.5em;
-    width: 70%;
-} */
-
-/* @media screen and (max-width:768px){
-    #formulario{
-        margin-bottom: 18em;
-    };
-}
- */
