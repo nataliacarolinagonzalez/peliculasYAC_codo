@@ -73,10 +73,9 @@ fetch("https://api.themoviedb.org/3/movie/now_playing?language=es&page=1&api_key
                         '<iframe src="https://www.youtube.com/embed/' + rdos[0].key +'" frameborder = "0" width="60%" height="315"></iframe>'+
                         '</section>')             
             })
+      })
     })
-    
-  })
-}
+  }
 })          
   
 
