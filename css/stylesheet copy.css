@@ -6,23 +6,19 @@
     box-sizing: border-box;
 }
 body {
-    /* width: 100%;
+    width: 100%;
     position: relative;
-    padding-bottom: 15em; */
+    padding-bottom: 15em;
    /*  min-height: 100vh; */
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
     background: url(../img/fondo.jpg);
-    min-height: 100%;
-    }
-html{
-    height: 100%;
     }
 header{
-    position: sticky; 
+    position: sticky;
     top: 0px; 
-    width: 100vw;   
-    z-index: 1000; 
+    width: 100vw;  
+    z-index: 1000;
     font-family:'Alkatra', cursive;
 }
 nav {
@@ -45,7 +41,8 @@ nav li {
     font-variant: small-caps;
     font-size: 1.3em;
     letter-spacing: 0.2em;
-    font-weight: bold; 
+    font-weight: bold;
+    
 }
 
 nav li:hover {
@@ -125,10 +122,9 @@ h1 {
 main{
     width: 100%;
     text-align: center;
-    overflow: hidden;
     
 }
-.cards-container, .cards-container-peliculas{
+.cards-container, .cards-peliculas{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -150,7 +146,6 @@ main{
 }
 
 #cards-peliculas {
-    display: flex;
     border: none;
     width: 100%;
     padding: 0.5em;
@@ -159,39 +154,28 @@ main{
     box-shadow: 0px 0px 6px 0.5px #FFCC00;
     border-radius: 0.5em;
     background-color: #24303c95;
-    color: white; 
-}
-
-#cards-peliculas #genero-estreno{
-    border: 1px solid red;
+    color: white;
     display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
-#cards-peliculas #titulo{
+#cards-peliculas #info-genero{
+    border: 1px solid red;
+}
+#cards-peliculas #info-titulo{
     border: 1px solid yellow;
-    display: inline-block;
-   
 }
 #cards-peliculas #poster{
     border: 1px solid green;
-    
 }
-#cards-peliculas #subtitulo{
-    border: 1px solid orchid;
-    
-}
-#cards-peliculas #resumen{
-    border: 1px solid blue;
-    
-}
-
 
 #cards img{
     width: 100% ;
     /* padding: 0;
     margin: 0; */
 }
-#cards-container-peliculas img {
+#cards-peliculas img {
     width: 20em;
     /* margin: 0 auto;
     padding: 0; */ 
@@ -286,13 +270,13 @@ main{
  */
 
 footer {
-   /*  height: auto; */
+    height: auto;
     background-color: #24303c;
-    width: 100%;
+    width: 100vw;
     color: whitesmoke;
-    /* position: absolute;
+    position: absolute;
     bottom: 0;
-    margin: 0; */
+    margin: 0;
 }
 footer #info-gral-footer{
     display: flex;
@@ -343,7 +327,12 @@ footer #info-gral-footer .redes i{
 footer #info-gral-footer .redes {
     margin-top: 1.8em;
 }
-
+.btn-whatsapp img{
+    width: 4.5em;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
 footer #info-gral-footer .suscripcion input{
     width: 50%;
     border-radius: 0.2em;
