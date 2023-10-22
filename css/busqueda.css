@@ -9,7 +9,6 @@
     height: 10em;
 }
 #search-tab {
-   
     display: flex;
     justify-content: space-around;
     border: 1px solid #FFCC00;
@@ -19,14 +18,10 @@
     margin: 2em auto;
 }
 #search-tab  button i{
-    color: whitesmoke;
-
-    
+    color: whitesmoke;  
 }
 #search-tab  button {
-    margin: 0;
-    
-    
+    margin: 0; 
 }
 #search-tab input {
     width: 100%;
@@ -51,17 +46,16 @@
     border-radius: 0 0.2em 0.2em 0;
 }
 
-/* #trailer-busqueda{
-    margin: 5em auto;
-} */
-
 .grid-container main{
     grid-area: main;
     margin: 2em auto;
-   
 }
 
 .grid-container footer{
     grid-area: footer;
-   
 }
+.cards-container h1{
+    text-align: center;
+    width: 80vw;
+}
+
