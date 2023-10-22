@@ -1,15 +1,19 @@
-function searchAction() {
-  valDeBusq = document.getElementById("input-busq").value;
-  $.getJSON("https://api.themoviedb.org/3/search/movie?query="+valDeBusq+"&include_adult=false&language=es&page=1&api_key=da2bc34b7d1c815449e218aadeea9272",
-    function (data) {
-      const resultados = data.results;   
-      console.log(resultados)   
+let urlTendencia = "https://api.themoviedb.org/3/trending/movie/week?language=es&api_key=da2bc34b7d1c815449e218aadeea9272"
+
+cargarApiTendencia(urlTendencia)
+
+function cargarApiTendencia(url){
+  fetch("https://api.themoviedb.org/3/trending/movie/week?language=es&api_key=da2bc34b7d1c815449e218aadeea9272")
+    .then(data => data.json())
+    .then(data => {
+      let resultados = data.results
+      let idPelis = ""
       for(let i=0; i<resultados.length; i++) {
-        document.querySelector('.cards-container').insertAdjacentHTML ("afterbegin", 
-          '<section id="cards">' +
-            '<img id="' +resultados[i].id + '" src="http://image.tmdb.org/t/p/w500' + resultados[i].poster_path + '" alt="">'  +
-          '</section>')           
-      }
+          document.querySelector('.cards-container').insertAdjacentHTML ("afterbegin", 
+            '<section id="cards">' +
+              '<img id="' +resultados[i].id + '" src="http://image.tmdb.org/t/p/w500' + resultados[i].poster_path + '" alt="">'  +
+            '</section>')           
+    }
     let imgPeliculas = document.querySelectorAll("#cards img")
     console.log(imgPeliculas)         
     for (j=0; j < imgPeliculas.length; j++){
@@ -21,7 +25,7 @@ function searchAction() {
           .then(datos => {
             console.log(datos)
             document.querySelector('.cards-container').innerHTML = ""
-            document.querySelector("#search-tab").style.display = "none"
+            /* document.querySelector("#search-tab").style.display = "none" */
             document.querySelector('.cards-container-peliculas').insertAdjacentHTML ("afterbegin", 
                   '<section id="cards-peliculas">' +
                     '<div id="poster"><img id="' +datos.id + '" src="http://image.tmdb.org/t/p/w500' + datos.poster_path + '" alt=""></div>'  +
@@ -41,7 +45,26 @@ function searchAction() {
                           '</section>')             
               })
         })
-    })
-  }
-})
+      })
+    }
+  })
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

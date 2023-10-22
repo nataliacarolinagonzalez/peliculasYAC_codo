@@ -6,14 +6,15 @@
     box-sizing: border-box;
 }
 body {
-    /* width: 100%;
-    position: relative;
+    width: 100%;
+    /* position: relative;
     padding-bottom: 15em; */
    /*  min-height: 100vh; */
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
     background: url(../img/fondo.jpg);
     min-height: 100%;
+    color: #FFCC00;
     }
 html{
     height: 100%;
@@ -96,120 +97,120 @@ nav i{
     background-color: #FFCC00; 
     border-radius: 0 0.2em 0.2em 0;
 }
-/* ver */
-h1 {
+#nombre-sitio {
     font-family: 'Dela Gothic One', cursive;
-    letter-spacing: 0.8em;
-    font-size: 3em;
-    margin: 1em auto;
-    text-shadow: 2px 2px 5px #FFCC00;
-    text-align: center;
+    letter-spacing: 0.3em;
+    text-shadow: 1px 1px 5px #FFCC00;
+    color: black;
 }
-/* ver */
-  /* h3 {
-    margin-top: 0px;
-    margin-bottom: 1rem;
-    color: white;
-    text-align: center;
-    border-width: 0px 3px 3px 3px;
-    border-color: aliceblue;
-    border-style: solid;
-  border-color: aliceblue;
-    border-bottom-style: solid;
-    border-left: solid;
-    border-right: solid; 
-}*/
+#subtitulo-main{
+    font-family: 'Dela Gothic One', cursive;
+    letter-spacing: 0.3em;
+    font-size: 3.5em;
+    text-align: left;
+    margin: 0.5em auto;
+}
+#presentacion-main {
+    font-size: 1.5em;
+    text-align: left;
+    margin-bottom: 3em;
+    line-height: 1.5em;
+}
 
- 
 /* CARDS */
 main{
-    width: 100%;
+    width: 90%;
     text-align: center;
     overflow: hidden;
-    
 }
 .cards-container, .cards-container-peliculas{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 2em;
 }
 
 #cards{
-    display: inline-block;
     border: none;
-    width: 20em;
-    height: 30em;
-    /* padding: 0.5em; */
-    margin: 2.5em 1em;
-    font-size: 0.9em;
+    width: 12em;
+    margin-bottom: 3em;
     box-shadow: 0px 0px 6px 0.5px #FFCC00;
     border-radius: 0.5em;
-    overflow: hidden;
-    background-color: #24303c95;
-    color: white;
+}
+#cards img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
 }
 
+#cards:hover {
+    transform: scale(1.1);
+    transition: 1.5s ease;
+    cursor: pointer; 
+}
 #cards-peliculas {
-    display: flex;
     border: none;
-    width: 100%;
-    padding: 0.5em;
-    margin: 2em 1em;
+    width: 90%;
+    height: auto;
+    padding: 1.2em;
+   /*  margin: 2em 2em; */
     font-size: 0.9em;
     box-shadow: 0px 0px 6px 0.5px #FFCC00;
     border-radius: 0.5em;
     background-color: #24303c95;
     color: white; 
+    display: flex;
+    align-items: center;
+   
+}
+#cards-peliculas img{
+    width: 20em;  
+    padding: 0; 
+    border-radius: 0.5em;
+}
+#cards-peliculas #titulo{
+    display: block;
+    margin: 1.5em auto;
+    padding: 1em;
+    text-align: center;
+}
+#cards-peliculas #titulo h2{
+    font-size: 3em;
+    text-align: center;
+    color: #FFCC00;
+    text-shadow: 2px 2px 3px whitesmoke;
+    margin-bottom: 0.4em;
+    letter-spacing: 0.2em;
+
+}
+#cards-peliculas #titulo h3{
+    text-align: center;
+}
+#cards-peliculas #titulo p{
+    text-align: justify;
+    margin: 1.5em 1.5em;
+    line-height: 1.5em;
+
 }
 
 #cards-peliculas #genero-estreno{
-    border: 1px solid red;
     display: flex;
-    
-}
-#cards-peliculas #titulo{
-    border: 1px solid yellow;
-    display: inline-block;
-   
-}
-#cards-peliculas #poster{
-    border: 1px solid green;
-    
-}
-#cards-peliculas #subtitulo{
-    border: 1px solid orchid;
-    
-}
-#cards-peliculas #resumen{
-    border: 1px solid blue;
-    
+    align-items: center;
+    justify-content: space-around;
 }
 
-
-#cards img{
-    width: 100% ;
-    /* padding: 0;
-    margin: 0; */
+#cards-peliculas #genero-estreno span{
+   font-weight: bold;
 }
-#cards-container-peliculas img {
-    width: 20em;
-    /* margin: 0 auto;
-    padding: 0; */ 
+.cards-container-peliculas #trailer{
+    margin-bottom: 1.5em;
 }
 
-
-#cards:hover {
-    transform: scale(1.2);
-    overflow: hidden;
-    transition: 1.5s ease;
-    
-}
 #logoimg {
-    margin-top: 0.313em;
-    margin-left: 0.313em;
-    margin-bottom: 0.063em;
+    margin-top: 0.31em;
+    margin-left: 0.31em;
+    margin-bottom: 0.06em;
     width: 6.8em;
-    
 }
 
 
@@ -290,7 +291,7 @@ footer {
     background-color: #24303c;
     width: 100%;
     color: whitesmoke;
-    /* position: absolute;
+   /*  position: absolute;
     bottom: 0;
     margin: 0; */
 }
@@ -307,9 +308,10 @@ footer #info-gral-footer .info, footer #info-gral-footer .suscripcion{
 footer .copy{
     text-align: center;
     color: white;
-    margin-bottom: 0.8em;
+    /* margin-bottom: 1em; */
 
 }
+
 footer #info-gral-footer .info h4, footer #info-gral-footer .suscripcion h4, footer #info-gral-footer .redes h4 {
     margin-bottom: 0.8em;
     font-variant: small-caps;
