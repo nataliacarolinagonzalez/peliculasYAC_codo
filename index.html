@@ -8,7 +8,8 @@
     <link rel="icon" type="image/jpg" href="img/logonegro.png">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/stylesheet.css">
+    <!-- <link rel="stylesheet" href="./css/stylesheet.css"> -->
+    <link rel="stylesheet" href="./css/grid.css">
 </head>
 
 <body>
@@ -32,20 +33,24 @@
                 <!-- <a href="./carrito.html"><i id="iconos" class="fa-solid fa-cart-shopping"></i></a> -->
             </div>
         </nav>
-        <!-- <h1>Películas YAC</h1>
-        <h2>Bienvenidos!</h2> 
-        <h3>En Películas YAC podés descubrir nuevas películas, acceder al resumen, trailer y su clasificación. Todo en un solo lugar. </h3> -->
     </header>
-        
+    <div class="grid-container"> 
+        <div class="encabezado">
+            <h2 id="subtitulo-main">Bienvenidos!</h2> 
+            <h3 id="presentacion-main">En<span id="nombre-sitio"> Películas YAC</span> podés descubrir nuevas películas, acceder al resumen, trailer y su popularidad. Todo en un solo lugar. </h3> 
+            </div> 
     <main>
         <!-- <h1>Películas YAC</h1> -->
-        <h2 id="subtitulo-main">Bienvenidos!</h2> 
-        <h3 id="presentacion-main">En<span id="nombre-sitio"> Películas YAC</span> podés descubrir nuevas películas, acceder al resumen, trailer y su popularidad. Todo en un solo lugar. </h3>
+        <!-- <h2 id="subtitulo-main">Bienvenidos!</h2> 
+        <h3 id="presentacion-main">En<span id="nombre-sitio"> Películas YAC</span> podés descubrir nuevas películas, acceder al resumen, trailer y su popularidad. Todo en un solo lugar. </h3> -->
        <!--  <div id="busqueda"></div> -->
         <div class="cards-container-peliculas"></div>
         <div class="cards-container"></div>
         <div class="cards-container2"></div>
     </main>
+    <!-- <aside class="aside">
+        <img src="./img/logonegro.png" alt="">
+    </aside>  -->
 
     <footer>
         <div id="info-gral-footer">
@@ -74,6 +79,8 @@
             <h6>© 2023 YAC</h6>
         </div>  
     </footer>
+</div> 
+        <a href="index.html"><img id="logo-fijo" src="img/logoNEGRO.png" alt="logo"></a>
 
     <script src="https://kit.fontawesome.com/ba0ece2d64.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

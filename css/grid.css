@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    min-height: 100%;
+    color: #FFCC00;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto; 
+    grid-template-areas:
+    "encabezado encabezado encabezado  encabezado"
+    "main main main main"
+    "footer footer footer footer";
+    background: url(../img/fondo.jpg);
+}
+#logoimg {
+    width: 6.8em;
+}
+#logo-fijo {
+    width: 6.8em;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+#logoimg:hover, #iconos:hover, footer #info-gral-footer .redes i:hover  {
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+header{
+    grid-area: header;
+    display: grid;
+    position: sticky; 
+    top: 0px; 
+    z-index: 1000; 
+    font-family:'Alkatra', cursive;
+}
+
+header nav {
+    background-color: #24303c;
+    color: white;
+    margin: 0;
+    /* padding: 1em; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: 2px 2px 5px gray;
+    transition: 0.3s;
+    height: 6em;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav li { 
+    color: rgb(255, 255, 255);
+    padding: 50px;
+    font-variant: small-caps;
+    font-size: 1.3em;
+    letter-spacing: 0.2em;
+    font-weight: bold; 
+    list-style-type: none;   
+}
+header nav a { 
+    text-decoration: none;   
+}
+
+header nav li:hover {
+    transition: 0.3s;
+    transform: scale(1.2);
+
+}
+ header nav i{
+    color: whitesmoke;
+    margin: 0.5em;
+}
+/* ENCABEZADO */
+.grid-container .encabezado{
+    grid-area: encabezado;
+    margin-left: 2em;
+    margin-right: 2em;
+
+}
+.grid-container .encabezado #nombre-sitio {
+    font-family: 'Dela Gothic One', cursive;
+    letter-spacing: 0.3em;
+    text-shadow: 1px 1px 5px #FFCC00;
+    color: black;
+}
+.grid-container .encabezado #subtitulo-main{
+    font-family: 'Dela Gothic One', cursive;
+    letter-spacing: 0.3em;
+    font-size: 3.5em;
+    text-align: justify;
+    margin: 0.5em auto;
+}
+.grid-container .encabezado #presentacion-main {
+    font-size: 1.5em;
+    text-align: left;
+   /*  margin-bottom: 3em; */
+    line-height: 1.5em;
+}
+
+/* MAIN */
+.grid-container main{
+    grid-area: main;
+}
+.cards-container, .cards-container-peliculas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto 3em auto;
+}
+#cards{
+    border: none;
+    width: 12em;
+    margin-bottom: 3em;
+    box-shadow: 0px 0px 6px 0.5px #FFCC00;
+    border-radius: 0.5em;
+    margin: 1.5em;
+    
+}
+#cards img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+}
+
+#cards:hover {
+    transform: scale(1.1);
+    transition: 1.5s ease;
+    cursor: pointer; 
+}
+#cards-peliculas {
+    border: none;
+    width: 90%;
+    height: auto;
+    padding: 1.2em;
+    /* margin: 2em 2em; */
+    font-size: 0.9em;
+    box-shadow: 0px 0px 6px 0.5px #FFCC00;
+    border-radius: 0.5em;
+    background-color: #24303c95;
+    color: white; 
+    display: flex;
+    align-items: center;
+   
+}
+#cards-peliculas img{
+    width: 20em;  
+    padding: 0; 
+    border-radius: 0.5em;
+}
+#cards-peliculas #titulo{
+    display: block;
+    margin: 1.5em auto;
+    padding: 1em;
+    text-align: center;
+}
+#cards-peliculas #titulo h2{
+    font-size: 3em;
+    text-align: center;
+    color: #FFCC00;
+    text-shadow: 2px 2px 3px whitesmoke;
+    margin-bottom: 0.4em;
+    letter-spacing: 0.2em;
+
+}
+#cards-peliculas #titulo h3{
+    text-align: center;
+}
+#cards-peliculas #titulo p{
+    text-align: justify;
+    margin: 1.5em 1.5em;
+    line-height: 1.5em;
+
+}
+
+#cards-peliculas #genero-estreno{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#cards-peliculas #genero-estreno span{
+   font-weight: bold;
+}
+.cards-container-peliculas #trailer{
+    margin-bottom: 1.5em;
+}
+
+/* FOOTER */
+.grid-container footer{
+    background-color: #24303c;
+    color: whitesmoke;
+    grid-area: footer;
+}
+
+.grid-container footer #info-gral-footer{
+     display: flex;
+     justify-content: space-around;
+ }
+ .grid-container footer #info-gral-footer .info, .grid-container footer #info-gral-footer .suscripcion{
+     margin: 1em;
+     padding: 0;
+     line-height: 1.3em;
+     font-size: 0.9em;
+ }
+ .grid-container footer .copy{
+     text-align: center;
+     color: white;
+     padding: 1em;
+ 
+ }
+ 
+ footer #info-gral-footer .info h4, footer #info-gral-footer .suscripcion h4, footer #info-gral-footer .redes h4 {
+     margin-bottom: 0.8em;
+     font-variant: small-caps;
+     font-size: 1.3em;
+     letter-spacing: 0.2em;
+     font-family:'Alkatra', cursive; 
+     text-shadow: 2px 2px 5px gray; 
+ }
+ footer #info-gral-footer .info a, footer #info-gral-footer .contacto a {
+     text-decoration: none;
+     color: whitesmoke; 
+ }
+ 
+ footer #info-gral-footer .info li {
+     list-style-type: '>  '; 
+     margin-bottom: 0.4em; 
+ }
+ footer #info-gral-footer .info li::marker{
+     font-size: 0.6em;
+ }
+ footer #info-gral-footer .info a:hover{
+     text-decoration: underline;
+     color: #FFCC00;
+ }
+ footer #info-gral-footer .redes i{
+     color: white;
+     font-size: 1.1em;
+     margin-right: 1em;
+ }
+ 
+ footer #info-gral-footer .redes {
+     margin-top: 1.8em;
+ }
+ 
+ footer #info-gral-footer .suscripcion input{
+     width: 50%;
+     border-radius: 0.2em;
+     padding: 0.3em;
+     height: 2.2em;
+     color: #24303c;
+     outline: none;
+     font-size: 0.8em;
+     border: none;
+ 
+ }
+ footer #info-gral-footer .suscripcion input[type="submit"] {
+     width: auto;
+     height: 2.2em;
+     background-color: #FFCC00;
+     border: none;
+     outline: none;
+     font-weight: bold;
+ }
+ 
+ 
+ /* animacion */
+@keyframes miMovimiento2 {
+    0%{
+        transform: translateX(-10em);
+    }
+    50%{
+        transform: translateX(20em);
+        
+    }
+    75%{
+        transform: translateX(-20em);
+
+    }
+    100%{
+        transform: translateX(20em);
+
+    }
+}
+ #animacion-logo{
+    width: 10em;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+
+    animation-name: miMovimiento2;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-play-state: running; 
+} 

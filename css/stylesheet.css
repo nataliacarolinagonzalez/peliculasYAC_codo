@@ -57,6 +57,12 @@ nav i{
     color: whitesmoke;
     margin: 0.5em;
 }
+#logoimg {
+    margin-top: 0.31em;
+    margin-left: 0.31em;
+    margin-bottom: 0.06em;
+    width: 6.8em;
+}
 
 #logoimg:hover, #iconos:hover, footer #info-gral-footer .redes i:hover  {
     transition: 0.3s;
@@ -120,7 +126,7 @@ nav i{
 /* CARDS */
 main{
     width: 90%;
-    text-align: center;
+    
     overflow: hidden;
 }
 .cards-container, .cards-container-peliculas{
@@ -206,12 +212,6 @@ main{
     margin-bottom: 1.5em;
 }
 
-#logoimg {
-    margin-top: 0.31em;
-    margin-left: 0.31em;
-    margin-bottom: 0.06em;
-    width: 6.8em;
-}
 
 
 /* MEDIA QUERIES */
