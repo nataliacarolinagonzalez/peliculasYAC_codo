@@ -4,6 +4,7 @@ function searchAction() {
     function (data) {
       const resultados = data.results;   
       console.log(resultados)   
+      document.querySelector('.trailer-busqueda').style.display = "none"
       for(let i=0; i<resultados.length; i++) {
         document.querySelector('.cards-container').insertAdjacentHTML ("afterbegin", 
           '<section id="cards">' +
@@ -20,12 +21,12 @@ function searchAction() {
           .then(datos => datos.json())
           .then(datos => {
             console.log(datos)
-            document.querySelector('.cards-container').innerHTML = ""
+            document.querySelector('.cards-container').style.display = "none"
             document.querySelector("#search-tab").style.display = "none"
             document.querySelector('.cards-container-peliculas').insertAdjacentHTML ("afterbegin", 
                   '<section id="cards-peliculas">' +
                     '<div id="poster"><img id="' +datos.id + '" src="http://image.tmdb.org/t/p/w500' + datos.poster_path + '" alt=""></div>'  +
-                    '<div id="titulo"><h2> '+ datos.title +'</h2><h3>'+ datos.tagline + '</h3><p>'+  datos.overview +'</p><div id="genero-estreno"><p><span> Género</span>: '+  datos.genres[0].name +'</p><p><span> Estreno</span>: '+  datos.release_date +'</p><p><span> Popularidad</span>: '+  (datos.vote_average).toFixed(1)+'</p></div></div>'+ 
+                    '<div id="titulo"><h2> '+ datos.title +'</h2><h3>'+ datos.tagline + '</h3><p>'+  datos.overview +'</p><div id="genero-estreno"><p><span> Género</span>: '+  datos.genres[0].name +'</p><p><span> Estreno</span>: '+  (datos.release_date).split("-").reverse().join("-") +'</p><p><span> Popularidad</span>: '+  (datos.vote_average).toFixed(1)+'</p></div></div>'+ 
                   '</section>')       
                   fetch('https://api.themoviedb.org/3/movie/'+ idPelis +'/videos?api_key=da2bc34b7d1c815449e218aadeea9272&language=es')
                   .then(resp => resp.json())
@@ -45,3 +46,11 @@ function searchAction() {
   }
 })
 }
+
+//busca con enter
+let input = document.querySelector("#input-busq")
+input.addEventListener("keydown", function(e){
+  if (e.key === "Enter"){
+      searchAction()
+  } 
+})

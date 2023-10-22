@@ -57,7 +57,7 @@ fetch(url)
                   console.log(rdosDondeVer)
                   console.log(rdosDondeVer.AR.rent[0].provider_name) */
           //fin prueba
-          document.querySelector('.cards-container').innerHTML = ""
+          document.querySelector('.cards-container').style.display = "none"
           /* document.querySelector("#search-tab").style.display = "none" */
           document.querySelector("#subtitulo-main").style.display = "none"
           document.querySelector("#presentacion-main").style.display = "none"

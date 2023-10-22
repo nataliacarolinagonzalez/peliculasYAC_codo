@@ -19,7 +19,7 @@ body{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto auto; 
     grid-template-areas:
-    "encabezado encabezado encabezado  encabezado"
+    "encabezado encabezado encabezado encabezado"
     "main main main main"
     "footer footer footer footer";
     background: url(../img/fondo.jpg);
@@ -127,11 +127,9 @@ header nav li:hover {
 #cards{
     border: none;
     width: 12em;
-    margin-bottom: 3em;
     box-shadow: 0px 0px 6px 0.5px #FFCC00;
     border-radius: 0.5em;
-    margin: 1.5em;
-    
+    margin: 1.5em;   
 }
 #cards img{
     width: 100%;
@@ -149,15 +147,14 @@ header nav li:hover {
     width: 90%;
     height: auto;
     padding: 1.2em;
-    /* margin: 2em 2em; */
+    margin: 3em auto;
     font-size: 0.9em;
     box-shadow: 0px 0px 6px 0.5px #FFCC00;
     border-radius: 0.5em;
     background-color: #24303c95;
     color: white; 
     display: flex;
-    align-items: center;
-   
+    align-items: center; 
 }
 #cards-peliculas img{
     width: 20em;  
@@ -198,8 +195,9 @@ header nav li:hover {
 #cards-peliculas #genero-estreno span{
    font-weight: bold;
 }
-.cards-container-peliculas #trailer{
-    margin-bottom: 1.5em;
+#trailer iframe{
+    margin: 3em auto;
+    display: flex;
 }
 
 /* FOOTER */
@@ -281,34 +279,3 @@ header nav li:hover {
  }
  
  
- /* animacion */
-@keyframes miMovimiento2 {
-    0%{
-        transform: translateX(-10em);
-    }
-    50%{
-        transform: translateX(20em);
-        
-    }
-    75%{
-        transform: translateX(-20em);
-
-    }
-    100%{
-        transform: translateX(20em);
-
-    }
-}
- #animacion-logo{
-    width: 10em;
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
-
-    animation-name: miMovimiento2;
-    animation-duration: 5s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: both;
-    animation-play-state: running; 
-} 

@@ -8,7 +8,8 @@
     <link rel="icon" type="image/jpg" href="img/logonegro.png">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/stylesheet.css">
+    <!-- <link rel="stylesheet" href="./css/stylesheet.css"> -->
+    <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/busqueda.css">
 </head>
 
@@ -23,68 +24,67 @@
                 <!-- <a href="./carrito.html"><li>Carrito</li></a> -->
                 <a href="./tendencia.html"><li>Tendencia</li></a>
                 <a href="./busqueda.html"><li>Buscar</li></a>
-
             </ul>   
             <!-- <div id="search-tab">
                     <input id="input-busq" type="text" placeholder="Buscar..." maxlength="150" minlength="3">
                     <button onclick="searchAction()"><i class="fa-solid fa-magnifying-glass"></i></button> 
-            </div>  -->
+            </div> --> 
             <div>
                 <a href="./login.html"><i id="iconos" class="fa-solid fa-user"></i></a>
                 <!-- <a href="./carrito.html"><i id="iconos" class="fa-solid fa-cart-shopping"></i></a> -->
             </div>
         </nav>
-        <!-- <h1>Películas YAC</h1>
-        <h2>Bienvenidos!</h2> 
-        <h3>En Películas YAC podés descubrir nuevas películas, acceder al resumen, trailer y su clasificación. Todo en un solo lugar. </h3> -->
     </header>
-        
-    <main>
-        <div id="search-tab">
-            <input id="input-busq" type="text" placeholder="Buscar..." maxlength="150" minlength="3">
-            <button onclick="searchAction()"><i class="fa-solid fa-magnifying-glass"></i></button> 
-        </div> 
-        <div id="trailer-busqueda">
-            <iframe width="460" height="258" src="https://www.youtube.com/embed/JymKmSe5TOk?si=FN7V4vH0M1dZXmdz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="460" height="258" src="https://www.youtube.com/embed/Ofl9AecfSfQ?si=5w_xwTNBNbBMDmXv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="cards-container"></div>
-        <div class="cards-container-peliculas"></div>
-        
-    </main>
-
-    <footer>
-        <div id="info-gral-footer">
-            <div class="info">
-                <h4>Información</h4>
-                <ul>
-                    <li><a href="./tendencia.html">En tendencia</li></a>
-                    <li><a href="./contacto.html">Contacto</li></a>
-                    <li><a href="./login.html"">Log in</li></a>
-                    <li><a href="./nosotros.html">Sobre YAC</li></a>
-                </ul>
-            </div>
-            <div class="suscripcion">
-                <h4>Suscribite al Newsletter</h4>
-                <input type="email" placeholder="mimail@mail.com">
-                <input type="submit" value="Suscribirme">
-                <div class="redes">
-                    <h4>Seguinos</h4>
-                    <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="http://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-            </div>
-        </div> 
-        <div class="copy">
-            <h6>© 2023 YAC</h6>
+    <div class="grid-container"> 
+        <div class="encabezado">  
+            <div id="search-tab">
+                <input id="input-busq" type="text" placeholder="Buscar..." maxlength="150" minlength="3">
+                <button onclick="searchAction()"><i class="fa-solid fa-magnifying-glass"></i></button> 
+            </div> 
         </div>  
-    </footer>
+
+        <main>
+            <div class="trailer-busqueda">
+                <iframe width="460" height="258" src="https://www.youtube.com/embed/JymKmSe5TOk?si=FN7V4vH0M1dZXmdz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="460" height="258" src="https://www.youtube.com/embed/Ofl9AecfSfQ?si=5w_xwTNBNbBMDmXv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="cards-container"></div>
+            <div class="cards-container-peliculas"></div>
+        </main>
+
+        <footer>
+            <div id="info-gral-footer">
+                <div class="info">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="./tendencia.html">En tendencia</li></a>
+                        <li><a href="./contacto.html">Contacto</li></a>
+                        <li><a href="./login.html"">Log in</li></a>
+                        <li><a href="./busqueda.html">Buscar películas</li></a>
+                    </ul>
+                </div>
+                <div class="suscripcion">
+                    <h4>Suscribite al Newsletter</h4>
+                    <input type="email" placeholder="mimail@mail.com">
+                    <input type="submit" value="Suscribirme">
+                    <div class="redes">
+                        <h4>Seguinos</h4>
+                        <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div> 
+            <div class="copy">
+                <h6>© 2023 YAC</h6>
+            </div>  
+        </footer>
+    </div> 
+    <a href="index.html"><img id="logo-fijo" src="img/logoNEGRO.png" alt="logo"></a>
 
     <script src="https://kit.fontawesome.com/ba0ece2d64.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/busqueda.js"></script>
-
     
     
 </body>

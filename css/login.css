@@ -1,13 +1,13 @@
 .grid-container{ 
     grid-template-areas:
-    ". . . ."
+    ". . encabezado ."
     "main main main main"
     "footer footer footer footer";
 }
 
 .formulario{
     width: 60%;
-    margin: 5em auto;
+    margin: 3em auto;
     background-color: #24303c95; 
     opacity: 0.8;
     border-radius: 3%;
@@ -86,11 +86,9 @@
     display: block;
     margin-top: 1.5em;
     font-size: 1em;
-    text-align: right;
     border: none;
     outline: none;
     background-color: transparent;
-    margin-right: 0.5em;
     color:#FFCC00;
 }
 
@@ -108,7 +106,7 @@
         transform: translateX(-10em);
     }
     50%{
-        transform: translateX(20em);
+        transform: translateX(10em);
         
     }
     75%{
@@ -122,9 +120,6 @@
 }
  #animacion-logo{
     width: 10em;
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
-
     animation-name: miMovimiento2;
     animation-duration: 5s;
     animation-timing-function: ease-out;

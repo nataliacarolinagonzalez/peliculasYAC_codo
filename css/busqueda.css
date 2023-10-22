@@ -1,5 +1,15 @@
+.grid-container{ 
+    grid-template-areas:
+    ". encabezado encabezado ."
+    "main main main main"
+    "footer footer footer footer";
+}
+.grid-container .encabezado{
+    grid-area: encabezado;
+    height: 10em;
+}
 #search-tab {
-    width: 50%;
+   
     display: flex;
     justify-content: space-around;
     border: 1px solid #FFCC00;
@@ -39,4 +49,19 @@
     border: none;
     background-color: #FFCC00; 
     border-radius: 0 0.2em 0.2em 0;
+}
+
+/* #trailer-busqueda{
+    margin: 5em auto;
+} */
+
+.grid-container main{
+    grid-area: main;
+    margin: 2em auto;
+   
+}
+
+.grid-container footer{
+    grid-area: footer;
+   
 }
