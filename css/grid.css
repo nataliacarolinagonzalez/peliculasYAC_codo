@@ -12,7 +12,6 @@ body{
     font-family: 'Lato', sans-serif;
     min-height: 100%;
     color: #FFCC00;
-    position: relative;
 }
 
 .grid-container{
@@ -24,7 +23,6 @@ body{
     "main main main main"
     "footer footer footer footer";
     background: url(../img/fondo.jpg);
-   
 }
 #logoimg {
     width: 6.8em;
@@ -281,18 +279,28 @@ header nav li:hover {
  }
  
  /* Media Queries EJEMPLO*/
-/* @media all and (max-width: 380px){
-     #logoimg{
-        width: 40px;
+ @media all and (max-width: 380px){
+    .grid-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto; 
+    grid-template-areas:
+    "encabezado "
+    "main"
+    "footer";
     }
-    header nav{
+
+    #logoimg{
+        width: 5em;
+    }
+    header nav{/* ver */
         font-size: 0.5em;
         letter-spacing: 0;
         height: 35px;
         padding: 0.2em;  
     }
     
-    header nav ul li a{
+    header nav ul li a{/* ver */
         font-size: 1.1em;
     } 
     .grid-container .encabezado #subtitulo-main{
@@ -306,12 +314,7 @@ header nav li:hover {
         font-size: 0.5em;
 
     }
-    main #promos h5{
-        padding: 1em;
-        font-size: 0.8em;
-        margin: 0.5em;
-    }
-    
+        
     footer #info-gral-footer{
         flex-direction: column;
         font-size: 0.7em;
@@ -320,7 +323,16 @@ header nav li:hover {
         font-size: 0.5em;
     }
 }
-@media screen and (min-width:380px) and (max-width: 512px) {
+/* @media screen and (min-width:380px) and (max-width: 512px) {
+     .grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto; 
+    grid-template-areas:
+    "encabezado encabezado "
+    "main main"
+    "footer footer";
+    }
     .barra #logo img{
         width: 70px;
     }
@@ -372,7 +384,7 @@ header nav li:hover {
     footer .copy{
         font-size: 0.5em;
     }
-}
+} */
 
  
- */
+ 
