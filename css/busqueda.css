@@ -57,5 +57,625 @@
 .cards-container h1{
     text-align: center;
     width: 80vw;
+
+
 }
 
+
+@media screen and (min-width:380px) and (max-width: 512px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "encabezado "
+            "main"
+            "footer";
+        width: 100%;
+    }
+
+    #cards {
+        width: 23em;
+    }
+
+    #logoimg {
+        width: 5em;
+    }
+
+    header nav {
+        /* ver */
+        font-size: 0.6em;
+        letter-spacing: 0px;
+        height: 35px;
+        padding: 0.2em;
+    }
+
+    header nav ul li a {
+        /* ver */
+        font-size: 1.1em;
+    }
+
+    .grid-container .encabezado #subtitulo-main {
+        font-size: 1.3em;
+    }
+
+    .grid-container .encabezado #presentacion-main {
+        font-size: 1em;
+
+    }
+
+    .grid-container .encabezado #nombre-sitio {
+        font-size: 0.8em;
+
+    }
+
+    footer #info-gral-footer {
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.7em;
+    }
+
+    footer .copy {
+        font-size: 0.7em;
+    }
+
+    header nav ul a li {
+        padding: 1em 0.4em;
+    }
+
+    .foot-inf {
+        display: inline;
+        padding: 1.4em;
+        padding-left: 20px;
+    }
+
+    footer div h4 {
+        text-align: center;
+    }
+
+    .suscripcion-h4 {
+        font-size: 1.9em !important
+    }
+
+    .suscripcion a i {
+        padding-left: 1.3em;
+        padding-right: 1.3em;
+
+    }
+
+    #logo-fijo {
+        display: none;
+    }
+
+    .cards-container-peliculas {
+        width: 90%;
+    }
+
+    #cards-peliculas {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    #poster img {
+        width: 100%;
+    }
+
+    #titulo {
+        font-size: 0.69em;
+
+        padding: 0;
+    }
+
+    #trailer iframe {
+        width: 70%;
+
+    }
+
+}
+
+
+
+
+
+
+
+@media all and (max-width: 380px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "encabezado "
+            "main"
+            "footer";
+        width: 100%;
+    }
+
+    #cards {
+        width: 23em;
+    }
+
+    #logoimg {
+        width: 5em;
+    }
+
+    header nav {
+        /* ver */
+        font-size: 0.5em;
+        letter-spacing: 0;
+        height: 35px;
+        padding: 0.2em;
+    }
+
+    header nav ul li a {
+        /* ver */
+        font-size: 1.1em;
+    }
+
+    .grid-container .encabezado #subtitulo-main {
+        font-size: 1.3em;
+    }
+
+    .grid-container .encabezado #presentacion-main {
+        font-size: 1em;
+
+    }
+
+    .grid-container .encabezado #nombre-sitio {
+        font-size: 0.8em;
+
+    }
+
+    footer #info-gral-footer {
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.7em;
+    }
+
+    footer .copy {
+        font-size: 0.7em;
+    }
+
+    header nav ul a li {
+        padding: 1em 0.4em;
+
+    }
+
+    .foot-inf {
+        display: inline;
+        padding: 1em;
+        font-size: 1.2em;
+    }
+
+    footer div h4 {
+        text-align: center;
+    }
+
+    .suscripcion-h4 {
+        font-size: 1.8em !important
+    }
+
+    .suscripcion a i {
+        padding-left: 1em;
+        padding-right: 1em;
+
+    }
+
+    #logo-fijo {
+        display: none;
+    }
+
+
+    .cards-container-peliculas {
+        width: 90%;
+    }
+
+    #cards-peliculas {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    #poster img {
+        width: 100%;
+    }
+
+    #titulo {
+        font-size: 0.69em;
+
+        padding: 0;
+    }
+
+    #trailer iframe {
+        width: 70%;
+
+    }
+  .trailer-busqueda {
+    display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+    .trailer-busqueda iframe{
+        width: 90%;
+    
+    }
+
+
+}
+
+@media screen and (min-width:512px) and (max-width: 599px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "encabezado "
+            "main"
+            "footer";
+        width: 100%;
+    }
+
+    #cards {
+
+        width: 25em;
+    }
+
+    #logoimg {
+        width: 5em;
+    }
+
+    header nav {
+        /* ver */
+        font-size: 0.8em;
+        letter-spacing: 0px;
+        height: 35px;
+        padding: 0.2em;
+    }
+
+    header nav ul li a {
+        /* ver */
+        font-size: 1.1em;
+    }
+
+    .grid-container .encabezado #subtitulo-main {
+        font-size: 2em;
+    }
+
+    .grid-container .encabezado #presentacion-main {
+        font-size: 1em;
+
+    }
+
+    .grid-container .encabezado #nombre-sitio {
+        font-size: 0.8em;
+
+    }
+
+    footer #info-gral-footer {
+        flex-direction: column;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    footer .copy {
+        font-size: 1em;
+    }
+
+    header nav ul a li {
+        padding: 1em 0.4em;
+    }
+
+    .foot-inf {
+        display: inline;
+        padding: 1.4em;
+        padding-left: 20px;
+    }
+
+    footer div h4 {
+        text-align: center;
+    }
+
+    .suscripcion-h4 {
+        font-size: 1.9em !important
+    }
+
+    .suscripcion a i {
+        padding-left: 7em;
+
+
+    }
+
+    #logo-fijo {
+        display: none;
+    }
+
+    .cards-container-peliculas {
+        width: 90%;
+    }
+
+    #cards-peliculas {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    #poster img {
+        width: 100%;
+    }
+
+    #titulo {
+        font-size: 0.69em;
+
+        padding: 0;
+    }
+
+  #trailer iframe {
+      width: 70%;
+
+  }
+
+  .trailer-busqueda {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .trailer-busqueda iframe {
+      width: 90%;
+
+  }
+
+
+}
+
+@media screen and (min-width:600px) and (max-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "encabezado "
+            "main"
+            "footer";
+        width: 100%;
+    }
+
+    #cards {
+
+        width: 40%;
+    }
+
+    #logoimg {
+        width: 5em;
+    }
+
+    header nav {
+        /* ver */
+        font-size: 0.8em;
+        letter-spacing: 0px;
+        height: 35px;
+        padding: 0.2em;
+    }
+
+    header nav ul li a {
+        /* ver */
+        font-size: 1.1em;
+    }
+
+    .grid-container .encabezado #subtitulo-main {
+        font-size: 2em;
+    }
+
+    .grid-container .encabezado #presentacion-main {
+        font-size: 1em;
+
+    }
+
+    .grid-container .encabezado #nombre-sitio {
+        font-size: 0.8em;
+
+    }
+
+    footer #info-gral-footer {
+        flex-direction: column;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    footer .copy {
+        font-size: 1em;
+    }
+
+    header nav ul a li {
+        padding: 1em 0.4em;
+    }
+
+    .foot-inf {
+        display: inline;
+        padding: 1.4em;
+        padding-left: 20px;
+    }
+
+    footer div h4 {
+        text-align: center;
+    }
+
+    .suscripcion-h4 {
+        font-size: 1.9em !important
+    }
+
+    .suscripcion a i {
+        padding-left: 7em;
+
+
+    }
+
+    #logo-fijo {
+        display: none;
+    }
+
+    .cards-container-peliculas {
+        width: 90%;
+    }
+
+    #cards-peliculas {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    #poster img {
+        width: 100%;
+    }
+
+    #titulo {
+        font-size: 0.9em;
+
+        padding: 0;
+    }
+
+    #trailer iframe {
+        width: 75%;
+
+    }
+
+     .trailer-busqueda {
+         display: flex;
+        align-items: center;
+        flex-direction: column;
+        }
+    
+    }
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "encabezado "
+            "main"
+            "footer";
+        width: 100%;
+    }
+
+    #cards {
+
+        width: 40%;
+    }
+
+    #logoimg {
+        width: 5em;
+    }
+
+    header nav {
+        /* ver */
+        font-size: 0.8em;
+        letter-spacing: 0px;
+        height: 35px;
+        padding: 0.2em;
+    }
+
+    header nav ul li a {
+        /* ver */
+        font-size: 1.1em;
+    }
+
+    .grid-container .encabezado #subtitulo-main {
+        font-size: 3em;
+    }
+
+    .grid-container .encabezado #presentacion-main {
+        font-size: 1.5em;
+
+    }
+
+    .grid-container .encabezado #nombre-sitio {
+        font-size: 0.8em;
+
+    }
+
+    footer #info-gral-footer {
+        flex-direction: column;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    footer .copy {
+        font-size: 1em;
+    }
+
+    header nav ul a li {
+        padding: 1em 0.4em;
+    }
+
+    .foot-inf {
+        display: inline;
+        padding: 1.4em;
+        padding-left: 20px;
+    }
+
+    footer div h4 {
+        text-align: center;
+    }
+
+    .suscripcion-h4 {
+        font-size: 1.9em !important
+    }
+
+    .suscripcion a i {
+        padding-left: 7em;
+
+
+    }
+
+    #logo-fijo {
+        display: none;
+    }
+
+    .cards-container-peliculas {
+        width: 90%;
+    }
+
+    #cards-peliculas {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    #poster img {
+        width: 100%;
+    }
+
+    #titulo {
+        font-size: 0.9em;
+
+        padding: 0;
+    }
+
+    #trailer iframe {
+        width: 75%;
+
+    }
+
+
+.trailer-busqueda {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trailer-busqueda iframe {
+    width: 90%;
+
+}
+
+}
+
+
+@media screen and (min-width:1025px){
+    body{
+        background-color: #24303c;
+    }
+}

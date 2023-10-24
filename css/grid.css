@@ -352,7 +352,36 @@ header nav li:hover {
    }
    
 
+   .cards-container-peliculas{
+    width: 90%;
+   }
+   #cards-peliculas{
+    flex-direction: column;
+    width: 100%;
+    
+   }
+  #poster img{
+    width: 100%;
+  }
+  #titulo{
+    font-size: 0.69em;
+   
+    padding: 0;
+  }
+  #trailer iframe {
+    width: 70%;
+    
+  }
+
+
+
+  
 }
+
+
+
+
+
 
 
 
@@ -442,7 +471,30 @@ header nav li:hover {
     #logo-fijo {
         display: none;
     }
+.cards-container-peliculas {
+    width: 90%;
+}
 
+#cards-peliculas {
+    flex-direction: column;
+    width: 100%;
+
+}
+
+#poster img {
+    width: 100%;
+}
+
+#titulo {
+    font-size: 0.69em;
+
+    padding: 0;
+}
+
+#trailer iframe {
+    width: 70%;
+
+}
 
 }
 
@@ -532,6 +584,29 @@ header nav li:hover {
     #logo-fijo {
         display: none;
     }
+    
+   .cards-container-peliculas{
+    width: 90%;
+   }
+   #cards-peliculas{
+    flex-direction: column;
+    width: 100%;
+    
+   }
+  #poster img{
+    width: 100%;
+  }
+  #titulo{
+    font-size: 0.69em;
+   
+    padding: 0;
+  }
+  #trailer iframe {
+    width: 70%;
+    
+  }
+
+
 }
 
 @media screen and (min-width:600px) and (max-width: 768px) {
@@ -619,6 +694,30 @@ header nav li:hover {
         #logo-fijo {
             display: none;
         }
+                .cards-container-peliculas {
+                    width: 90%;
+                }
+        
+                #cards-peliculas {
+                    flex-direction: column;
+                    width: 100%;
+        
+                }
+        
+                #poster img {
+                    width: 100%;
+                }
+        
+                #titulo {
+                    font-size: 0.9em;
+        
+                    padding: 0;
+                }
+        
+                #trailer iframe {
+                    width: 75%;
+        
+                }
 }
 
 @media screen and (min-width:769px) and (max-width: 1024px) {
@@ -706,5 +805,30 @@ header nav li:hover {
     #logo-fijo {
         display: none;
     }
+    .cards-container-peliculas {
+                    width: 90%;
+                }
+        
+    #cards-peliculas {
+     flex-direction: column;
+        width: 100%;
+        
+                }
+        
+     #poster img {
+       width: 100%;
+                }
+        
+    #titulo {
+      font-size: 0.9em;
+        
+        padding: 0;
+                }
+        
+      #trailer iframe {
+        width: 75%;
+        
+                }
+    
 }
  
