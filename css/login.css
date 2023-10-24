@@ -128,3 +128,65 @@
     animation-fill-mode: both;
     animation-play-state: running; 
 } 
+
+
+@media screen and (min-width:380px) and (max-width: 512px) {
+.grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "encabezado "
+            "main"
+            "footer";
+        width: 100%;
+
+}
+.encabezado img{
+   display: none;
+}
+main{
+    height: 80dvh;
+}
+
+}
+@media screen and (min-width:512px) and (max-width: 768px) {
+.grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "encabezado "
+            "main"
+            "footer";
+        width: 100%;
+
+    }
+
+    .encabezado img {
+        display: none;
+    }
+
+    main {
+        height: 80dvh;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "encabezado "
+            "main"
+            "footer";
+        width: 100%;
+
+    }
+
+    
+
+   
+}
+
