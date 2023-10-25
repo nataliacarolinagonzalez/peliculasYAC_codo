@@ -8,7 +8,7 @@ function searchAction() {
       document.querySelector('.trailer-busqueda').style.display = "none"  
       if (resultados.length !== 0){
         for(let i=0; i<resultados.length; i++) {
-          document.querySelector("#search-tab").style.display = "none"
+          document.querySelector(".encabezado").style.display = "none"
           document.querySelector('.cards-container').insertAdjacentHTML ("afterbegin", 
             '<section id="cards">' +
               '<img id="' +resultados[i].id + '" src="http://image.tmdb.org/t/p/w500' + resultados[i].poster_path + '" alt="">'  +

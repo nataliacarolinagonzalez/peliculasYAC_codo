@@ -7,7 +7,7 @@
 
 .formulario{
     width: 60%;
-    margin: 5em auto;
+    margin: 3em auto;
     background-color: #24303c95; 
     opacity: 0.8;
     border-radius: 3%;
@@ -64,8 +64,7 @@
     border-radius: 0.5em;
     border: none;
     margin: 0 1em;
-    font-size: 1em;
-    
+    font-size: 1em;  
 }   
 
 .formulario input:focus, .formulario textarea:focus{
@@ -102,34 +101,70 @@
     display: none;
 }
 
- /* animacion */
- @keyframes miMovimiento2 {
-    0%{
-        transform: translateX(-10em);
+@media all and (max-width: 380px){
+    .grid-container{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto; 
+    grid-template-areas:
+    "encabezado "
+    "main"
+    "footer";
     }
-    50%{
-        transform: translateX(20em);
-        
+    .formulario{
+        width: 90%;
     }
-    75%{
-        transform: translateX(-20em);
+    .formulario h3{
+        letter-spacing: 0;        
+    }
+    .formulario #pie-button button{
+        padding: 0.3em;
+        margin: 0 0.4em;
+        font-size: 0.8em;  
+    }  
 
-    }
-    100%{
-        transform: translateX(20em);
-
-    }
 }
- #animacion-logo{
-    width: 10em;
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
 
-    animation-name: miMovimiento2;
-    animation-duration: 5s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: both;
-    animation-play-state: running; 
-} 
+@media screen and (min-width:380px) and (max-width: 600px){
+    .grid-container{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto; 
+        grid-template-areas:
+        "encabezado "
+        "main"
+        "footer";
+        }
+        .formulario{
+            width: 90%;
+        }
+        .formulario h3{
+            letter-spacing: 0;        
+        }
+        .formulario #pie-button button{
+            padding: 0.4em;
+            margin: 0 0.6em;
+            font-size: 0.9em;  
+        }  
+}
+
+@media screen and (min-width:600px) and (max-width: 768px){
+    .grid-container {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "encabezado  encabezado"
+            " main main"
+            "footer footer";
+    }
+    .formulario{
+        width: 80%;
+    }
+    .formulario h3{
+        letter-spacing: 0;        
+    }
+    .formulario #pie-button button{
+        padding: 0.4em;
+        margin: 0 0.8em;
+        font-size: 1em;  
+    } 
+}
+

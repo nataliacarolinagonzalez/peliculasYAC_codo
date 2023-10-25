@@ -1,13 +1,18 @@
+/* .grid-container{ 
+    grid-template-areas:
+    "encabezado . . ."
+    "main main main main"
+    "footer footer footer footer";
+} */
 .grid-container{ 
     grid-template-areas:
-    ". . encabezado ."
-    "main main main main"
+    "encabezado main main main"
     "footer footer footer footer";
 }
 
 .formulario{
-    width: 60%;
-    margin: 3em auto;
+    width: 80%;
+    margin: 2em;
     background-color: #24303c95; 
     opacity: 0.8;
     border-radius: 3%;
@@ -101,26 +106,26 @@
 }
 
  /* animacion */
- @keyframes miMovimiento2 {
+ @keyframes miMovimiento {
     0%{
-        transform: translateX(-10em);
+        transform: translateY(-15em);
     }
     50%{
-        transform: translateX(10em);
+        transform: translateY(15em);
         
     }
     75%{
-        transform: translateX(-20em);
+        transform: translateY(-25em);
 
     }
     100%{
-        transform: translateX(20em);
+        transform: translateY(25em);
 
     }
 }
  #animacion-logo{
-    width: 10em;
-    animation-name: miMovimiento2;
+    width: 7em;
+    animation-name: miMovimiento;
     animation-duration: 5s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
@@ -129,64 +134,135 @@
     animation-play-state: running; 
 } 
 
-
-@media screen and (min-width:380px) and (max-width: 512px) {
-.grid-container {
-        display: grid;
+@media screen and (max-width:380px) {
+    .grid-container{ 
         grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
         grid-template-areas:
-            "encabezado "
-            "main"
-            "footer";
-        width: 100%;
-
-}
-.encabezado img{
-   display: none;
-}
-main{
-    height: 80dvh;
-}
-
-}
-@media screen and (min-width:512px) and (max-width: 768px) {
-.grid-container {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-            "encabezado "
-            "main"
-            "footer";
-        width: 100%;
-
+        "encabezado ."
+        "main main"
+        "footer footer";
     }
-
-    .encabezado img {
-        display: none;
+    .formulario{
+        width: 80%;
+        margin: 1.5em auto;
     }
-
-    main {
-        height: 80dvh;
-    }
-}
-
-@media screen and (min-width:769px) and (max-width: 1024px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-            "encabezado "
-            "main"
-            "footer";
-        width: 100%;
-
-    }
-
+    @keyframes miMovimiento {
+        0%{
+            transform: translateX(-10em);
+        }
+        50%{
+            transform: translateX(3em);
+            
+        }
+        75%{
+            transform: translateX(-3em);
     
-
-   
+        }
+        100%{
+            transform: translateX(15em);
+    
+        } 
+    }
+    #animacion-logo{
+        width: 4em; 
+    } 
+    .formulario h3{
+        letter-spacing: 0;        
+    }
+    .formulario #pie-button button{
+        padding: 0.3em;
+        margin: 0 0.4em;
+        font-size: 0.8em;  
+    }  
 }
+@media screen and (min-width:380px) and (max-width: 600px){
+    .grid-container{ 
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "encabezado "
+        "main "
+        "footer ";
+    }
+    .formulario{
+        width: 70%;
+        margin: 1.5em auto;
+    }
+    .formulario h3{
+        letter-spacing: 0;        
+    }
+    .formulario #pie-button button{
+        padding: 0.4em;
+        margin: 0 0.6em;
+        font-size: 0.9em;  
+    }  
+    @keyframes miMovimiento {
+        0%{
+            transform: translateX(-20em);
+        }
+        50%{
+            transform: translateX(3em);
+            
+        }
+        75%{
+            transform: translateX(-3em);
+    
+        }
+        100%{
+            transform: translateX(25em);
+    
+        }
+    }
+    #animacion-logo{
+        width: 5.5em; 
+    } 
+}
+
+@media screen and (min-width:600px) and (max-width: 768px){
+    .grid-container{ 
+        grid-template-columns: 20% 40% 40%;
+        grid-template-areas:
+        "encabezado main main"
+        "footer footer footer";
+    }
+    
+    .formulario{
+        width: 90%;
+        margin: 1.5em auto;
+    }
+    .formulario h3{
+        letter-spacing: 0.1;        
+    }
+    .formulario #pie-button button{
+        padding: 0.5em;
+        margin: 0 0.8em;
+        font-size: 1em;  
+    }  
+    #animacion-logo{
+        width: 6em; 
+    } 
+} 
+
+@media screen and (min-width:768px) and (max-width: 1024px){
+    .grid-container{ 
+        grid-template-columns: 20% 40% 40%;
+        grid-template-areas:
+        "encabezado main main"
+        "footer footer footer";
+    }
+    
+    .formulario{
+        width: 90%;
+    }
+    .formulario h3{
+        letter-spacing: 0.1;        
+    }
+    .formulario #pie-button button{
+        padding: 0.5em;
+        margin: 0 0.8em;
+        font-size: 1em;  
+    }  
+    #animacion-logo{
+        width: 6em; 
+    } 
+} 
 

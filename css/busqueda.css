@@ -57,8 +57,13 @@
 .cards-container h1{
     text-align: center;
     width: 80vw;
-
-
+}
+.trailer-busqueda {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
 
 @media all and (max-width: 380px){
@@ -71,12 +76,81 @@
     "footer";
     }
     .trailer-busqueda {
-        width: 80%;
-        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
       }
     .trailer-busqueda iframe {
-      width: 260px;
-      height: 146px;
+      width: 160px;
+      height: 90px;
+      margin: 1.5em auto;
     }
 }
 
+@media screen and (min-width:380px) and (max-width: 600px){
+    .grid-container{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto; 
+        grid-template-areas:
+        "encabezado "
+        "main"
+        "footer";
+        }
+        #search-tab {
+            width: 80%;
+        }
+        .trailer-busqueda {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .trailer-busqueda iframe {
+          width: 260px;
+          height: 146px;
+          margin: 1.5em auto;
+        }
+}
+
+@media screen and (min-width:600px) and (max-width: 768px){
+    .grid-container {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "encabezado  encabezado"
+            " main main"
+            "footer footer";
+    }
+    .trailer-busqueda {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    .trailer-busqueda iframe {
+      width: 460px;
+      height: 258px;
+      margin: 1.5em auto;
+    }
+    #search-tab {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px){
+ .grid-container {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "encabezado  encabezado"
+            " main main"
+            "footer footer";
+    }
+    .trailer-busqueda {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    .trailer-busqueda iframe {
+      width: 460px;
+      height: 258px;
+      margin: 1.5em auto;
+    }
+    #search-tab {
+        width: 70%;
+    }
+} 
