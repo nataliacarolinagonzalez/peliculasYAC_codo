@@ -35,7 +35,6 @@
     font-size: 0.8em;
     text-align: left;
 }
-
 .formulario .pie-input{
     width: initial;
     display: inline;
@@ -44,7 +43,6 @@
     display: inline-block;
     margin-top: 2em; 
 }
-   
 .formulario input, .formulario textarea {
     width: 100%;
     border-radius: 0.3em;

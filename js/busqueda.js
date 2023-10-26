@@ -31,11 +31,11 @@ input.addEventListener("keydown", function(e){
 
 function cargarPeliculas (){
 let imgPeliculas = document.querySelectorAll("#cards img")
-    console.log(imgPeliculas)         
+    //console.log(imgPeliculas)         
     for (j=0; j < imgPeliculas.length; j++){
       imgPeliculas[j].addEventListener("click", function(){
         idPelis = this.id
-        console.log(idPelis) 
+       // console.log(idPelis) 
         fetch('https://api.themoviedb.org/3/movie/'+ idPelis +'?language=es&api_key=da2bc34b7d1c815449e218aadeea9272')
           .then(datos => datos.json())
           .then(datos => {
@@ -58,8 +58,8 @@ let imgPeliculas = document.querySelectorAll("#cards img")
                             '<section id="trailer">' +
                             '<iframe src="https://www.youtube.com/embed/' + rdos[0].key +'" frameborder = "0" width="560" height="315"></iframe>'+
                             '</section>')             
-                    })
-          })
+                    }) 
+                  })
     })
   }
 }

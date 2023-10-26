@@ -51,7 +51,6 @@ header nav {
     background-color: #24303c;
     color: white;
     margin: 0;
-    /* padding: 1em; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -109,7 +108,6 @@ header nav li:hover {
 .grid-container .encabezado #presentacion-main {
     font-size: 1.5em;
     text-align: left;
-   /*  margin-bottom: 3em; */
     line-height: 1.5em;
 }
 
@@ -162,7 +160,6 @@ header nav li:hover {
     border-radius: 0.5em;
 }
 #cards-peliculas #titulo{
-    /* display: block; */
     margin: 1.5em;
     text-align: center;
 }
@@ -182,15 +179,12 @@ header nav li:hover {
     text-align: justify;
     margin: 1.5em 1.5em;
     line-height: 1.5em;
-
 }
-
 #cards-peliculas #genero-estreno{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-
 #cards-peliculas #genero-estreno span{
    font-weight: bold;
 }
@@ -198,84 +192,81 @@ header nav li:hover {
     margin: 3em auto;
     display: flex;
 }
-
 /* FOOTER */
 .grid-container footer{
     background-color: #24303c;
     color: whitesmoke;
     grid-area: footer;
 }
-
 .grid-container footer #info-gral-footer{
      display: flex;
      justify-content: space-around;
  }
- .grid-container footer #info-gral-footer .info, .grid-container footer #info-gral-footer .suscripcion{
+.grid-container footer #info-gral-footer .info, .grid-container footer #info-gral-footer .suscripcion{
      margin: 1em;
      padding: 0;
      line-height: 1.3em;
      font-size: 0.9em;
- }
- .grid-container footer .copy{
+}
+.grid-container footer .copy{
      text-align: center;
      color: white;
      padding: 1em;
  
  }
- footer #info-gral-footer .info h4, footer #info-gral-footer .suscripcion h4, footer #info-gral-footer .redes h4 {
+footer #info-gral-footer .info h4, footer #info-gral-footer .suscripcion h4, footer #info-gral-footer .redes h4 {
      margin-bottom: 0.8em;
      font-variant: small-caps;
      font-size: 1.3em;
      letter-spacing: 0.2em;
      font-family:'Alkatra', cursive; 
      text-shadow: 2px 2px 5px gray; 
- }
- footer #info-gral-footer .info a, footer #info-gral-footer .contacto a {
-     text-decoration: none;
-     color: whitesmoke; 
- }
+}
+footer #info-gral-footer .info a, footer #info-gral-footer .contacto a {
+    text-decoration: none;
+    color: whitesmoke; 
+}
  
- footer #info-gral-footer .info li {
-     list-style-type: '>  '; 
-     margin-bottom: 0.4em; 
- }
- footer #info-gral-footer .info li::marker{
-     font-size: 0.6em;
- }
- footer #info-gral-footer .info a:hover{
-     text-decoration: underline;
-     color: #FFCC00;
- }
- footer #info-gral-footer .redes i{
-     color: white;
-     font-size: 1.1em;
-     margin-right: 1em;
- }
- 
- footer #info-gral-footer .redes {
-     margin-top: 1.8em;
- }
- 
- footer #info-gral-footer .suscripcion input{
-     width: 50%;
-     border-radius: 0.2em;
-     padding: 0.3em;
-     height: 2.2em;
-     color: #24303c;
-     outline: none;
-     font-size: 0.8em;
-     border: none;
- }
- footer #info-gral-footer .suscripcion input[type="submit"] {
-     width: auto;
-     height: 2.2em;
-     background-color: #FFCC00;
-     border: none;
-     outline: none;
-     font-weight: bold;
- }
- 
- /* Media Queries*/
+footer #info-gral-footer .info li {
+    list-style-type: '>  '; 
+    margin-bottom: 0.4em; 
+}
+footer #info-gral-footer .info li::marker{
+    font-size: 0.6em;
+}
+footer #info-gral-footer .info a:hover{
+    text-decoration: underline;
+    color: #FFCC00;
+}
+footer #info-gral-footer .redes i{
+    color: white;
+    font-size: 1.1em;
+    margin-right: 1em;
+}
+footer #info-gral-footer .redes {
+    margin-top: 1.8em;
+}
+
+footer #info-gral-footer .suscripcion input{
+    width: 50%;
+    border-radius: 0.2em;
+    padding: 0.3em;
+    height: 2.2em;
+    color: #24303c;
+    outline: none;
+    font-size: 0.8em;
+    border: none;
+}
+footer #info-gral-footer .suscripcion input[type="submit"] {
+    width: auto;
+    height: 2.2em;
+    background-color: #FFCC00;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+/* Media Queries*/
  @media all and (max-width: 380px){
     .grid-container{
     grid-template-columns: 100%;
@@ -342,15 +333,15 @@ header nav li:hover {
      flex-direction: column;
      width: 100%;
     }
-   /*  #cards{
-        width: 23em;
-    } */
     #poster img{
       width: 100%;
     }
     #titulo{
       font-size: 0.6em;
-      padding: 0;
+      padding: 0.2em;
+    }
+    #cards-peliculas #titulo h2{
+        font-size: 2em;
     }
     #trailer iframe {
       width: 160px;
@@ -425,17 +416,15 @@ header nav li:hover {
         flex-direction: column;
         width: 100%;
     }
-    /* #cards {
-        width: 10em;
-    } */
-
     #poster img {
         width: 100%;
     }
-
-    #titulo {
+    #titulo{
         font-size: 0.8em;
-        padding: 0;
+        padding: 0.2em;
+      }
+    #cards-peliculas #titulo h2{
+        font-size: 2.5em;
     }
     #trailer iframe {
         width: 260px;
@@ -459,31 +448,21 @@ header nav li:hover {
         font-size: 1.3em;
         letter-spacing: 0;   
     }
-   /*  #cards {
-
-        width: 40%;
-    } */
-
     #logoimg {
         width: 5em;
     }
     .grid-container .encabezado #subtitulo-main {
         font-size: 2em;
     }
-
     .grid-container .encabezado #presentacion-main {
         font-size: 1em;
-
     }
-
     .grid-container .encabezado #nombre-sitio {
         font-size: 0.8em;
-
     }
     footer #info-gral-footer {
         font-size: 1em;
     }
-
     footer .copy {
         font-size: 0.8em;
     }
@@ -502,9 +481,12 @@ header nav li:hover {
     #poster img {
         width: 100%;
     }
-    #titulo {
+    #titulo{
         font-size: 0.9em;
-        padding: 0;
+        padding: 0.4em;
+      }
+    #cards-peliculas #titulo h2{
+        font-size: 2.5em;
     }
     #trailer iframe {
         width: 460px;
@@ -535,24 +517,18 @@ header nav li:hover {
         .grid-container .encabezado #subtitulo-main {
             font-size: 2.1em;
         }
-    
         .grid-container .encabezado #presentacion-main {
             font-size: 1.1em;
-    
         }
-    
         .grid-container .encabezado #nombre-sitio {
             font-size: 0.9em;
-    
         }
         footer #info-gral-footer {
             font-size: 1em;
         }
-    
         footer .copy {
             font-size: 0.8em;
         }
-    
         #logo-fijo{
             width: 5em;
             bottom: 10px;
@@ -561,9 +537,6 @@ header nav li:hover {
         .cards-container-peliculas {
             width: 80%;
         }
-        /* #cards {
-            width: 40%;
-        } */
         #cards-peliculas {
             flex-direction: column;
             width: 100%;
@@ -571,8 +544,11 @@ header nav li:hover {
         #poster img {
             width: 100%;
         }
-        #titulo {
+        #titulo{
             font-size: 1em;
-            padding: 0;
+            padding: 0.4em;
+          }
+        #cards-peliculas #titulo h2{
+            font-size: 2.8em;
         }
     }    

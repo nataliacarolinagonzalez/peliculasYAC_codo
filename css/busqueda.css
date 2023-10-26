@@ -48,9 +48,7 @@
 
 .grid-container main{
     grid-area: main;
-    /* margin: 2em auto; */
 }
-
 .grid-container footer{
     grid-area: footer;
 }
