@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/listado.css">
+
 </head>
 
 <body>
@@ -36,50 +38,27 @@
             <img id="animacion-logo" src="img/logoamarillo.png" alt="logo">
         </div> 
         <main>
-            <div class="formulario" id="registro">
-                <h3>Formulario de Registro</h3>
-                <form id="form-registro">
-                    <label  for="nombre">Nombre*</label>
-                    <input name="nombre" id="nombre" type="text">
-                    <label  for="apellido">Apellido*</label>
-                    <input id="apellido" name="apellido" type="text">
-                    <label for="tel" >Teléfono*</label>
-                    <input id="tel" name="tel" type="tel" placeholder="Código de área (2 digitos) y número (8 digitos)">
-                    <label for="Email">E-mail*</label>
-                    <input  id="email" name="email" type="text" placeholder="mail@mmail.com">
-                    <label  for="usuario">Usuario*</label>
-                    <input id="usuario" name="usuario" type="text" placeholder="Entre 6 y 10 letras mayúsculas y minúsculas."> 
-                    <label for="password">Clave*</label>
-                    <input  id="password" name="password" type="password" placeholder="Entre 8 y 10 caracteres entre mayúsculas, minúsculas y números.">  
-                    <input class="pie-input" name="condiciones" value="acepta" type="checkbox">
-                    <label class="pie-input" for="condiciones">Acepto las condiciones*</label>
-                    <p>*: campo obligatorio.</p>
-                    <div id="pie-button">
-                        <button type="submit">Enviar</button>
-                        <button  type="reset"> Restablecer</button> 
-                    </div>
-                </form>
-                <!-- <button id="link-login"> ¿Tenés cuenta? Login</button>  -->   
-                <a href="listado.html" id="link-listado"> Listado de usuarios registrados</a>    
-                <a href="actualizar.html" id="link-actualizar"> Actualizar usuario</a>    
-                <a href="eliminar.html" id="link-eliminar"> Eliminar usuario</a>    
-
-            </div>
-            <!-- <div class="formulario" id="login">
-                <h3>Log in</h3>
-                <form id="form-login">
-                    <label for="Email">E-mail</label>
-                    <input  name="email" type="text" placeholder="mail@mail.com"> 
-                    <label for="password">Clave</label>
-                    <input  name="password" type="password" placeholder="Ingresá tu clave">  
-                    <div id="pie-button">
-                        <button type="submit">Enviar</button>
-                        <button  type="reset"> Restablecer</button> 
-                    </div>
-                </form>  
-                <button id="link-registro"> ¿No tenés cuenta? Registrate</button>    
-
-            </div> -->
+            
+            <div class="listado">
+                <h3>Suscriptores de Peliculas YAC</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <!-- <th>Edad</th> -->
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                            <th>Contraseña</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaUsuarios"> </tbody>
+                </table>
+                <a href="login.html" id="link-listado"> Volver</a>    
+                <a href="actualizar.html"id="link-actualizar"> Actualizar usuario</a>    
+                <a href="eliminar.html"id="link-eliminar"> Eliminar usuario</a>  
+            </div>    
         </main>
 
         <footer>
@@ -113,6 +92,7 @@
     <a href="index.html"><img id="logo-fijo" src="img/logoNEGRO.png" alt="logo"></a>
 
     <script src="https://kit.fontawesome.com/ba0ece2d64.js"></script>
-    <script src="./js/login.js"></script>
+    <!-- <script src="./js/login.js"></script> -->
+    <script src="./js/listar.js"></script>
 </body>
 </html>

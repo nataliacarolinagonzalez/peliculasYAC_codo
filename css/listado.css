@@ -1,0 +1,57 @@
+.listado, .eliminar, #app{
+    text-align: center; 
+    margin: 3em;
+    background-color: #24303c95; 
+    opacity: 0.8;
+    border-radius: 2%;
+    padding: 2em;
+    color: whitesmoke;
+    font-weight: bold;
+    box-shadow: 0px 0px 6px 0.5px #FFCC00;
+    width: 80%; 
+}
+
+table { 
+    font-size: 0.8em;    
+    margin: 3.5em auto;     
+    width: 90%; 
+    text-align: center;  
+    border-collapse: collapse;
+
+}
+
+th { 
+      
+    padding: 1em;     
+    background: #24303c95 ;
+    border-top: 0.4em solid #FFCC00;    
+    border-bottom: 0.4em solid #FFCC00; 
+    color:white; 
+    }
+
+td{
+    border: 1px solid #FFCC00; 
+    border-collapse: collapse;
+    padding: 1em;
+    font-weight: normal; 
+}
+
+
+tr:hover th { 
+    background: #d0dafd; color: black; 
+}
+button{
+    color: #24303c; 
+    background-color: #FFCC00;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: none;
+    margin: 0 1em;
+    font-size: 1em;
+    
+}   
+
+button:hover{
+    background-color: #24303c ;
+    color:#FFCC00;
+}

@@ -1,0 +1,37 @@
+
+th { 
+    /* font-weight: normal;   */   
+    padding: 1em;     
+    background: #24303c95 ;
+    border-top: 0.4em solid #FFCC00;    
+    border-bottom: 0.4em solid #FFCC00; 
+    color:white; 
+    font-weight: bold;
+}
+
+td{
+    border: none;
+    padding: 1em;
+}
+
+
+tr:hover th { 
+    background: #d0dafd; 
+    color: black; 
+}
+
+button{
+    color: #24303c; 
+    background-color: #FFCC00;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: none;
+    margin: 0 1em;
+    font-size: 1em;
+    
+}   
+
+button:hover{
+    background-color: #24303c ;
+    color:#FFCC00;
+}
