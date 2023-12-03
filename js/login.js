@@ -117,7 +117,7 @@ function validarRegistro (e){
 function validarPassLogin(e){
     if (formLogin.password.value == ""){ 
         alert("Ingresa una clave")
-    } else if ((/\w{7,10}/.test(formLogin.password.value)) == false){
+    } else if ((/\w{8,10}/.test(formLogin.password.value)) == false){
         alert("Contraseña incorrecta")
         console.log(formLogin.password.value) 
     }else{
