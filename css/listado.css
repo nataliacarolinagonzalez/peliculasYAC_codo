@@ -21,7 +21,6 @@ table {
 }
 
 th { 
-      
     padding: 1em;     
     background: #24303c95 ;
     border-top: 0.4em solid #FFCC00;    
@@ -54,4 +53,10 @@ button{
 button:hover{
     background-color: #24303c ;
     color:#FFCC00;
+}
+
+@media screen and (max-width:970px){
+    table tr td:nth-child(3), table tr th:nth-child(3), table tr td:nth-child(4), table tr th:nth-child(4), table tr td:nth-child(2), table tr th:nth-child(2), table tr td:nth-child(6), table tr th:nth-child(6){
+        display:none;
+    }
 }

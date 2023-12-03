@@ -1,4 +1,23 @@
+.eliminar{
+    text-align: center; 
+    margin: 3em;
+    background-color: #24303c95; 
+    opacity: 0.8;
+    border-radius: 2%;
+    padding: 2em;
+    color: whitesmoke;
+    font-weight: bold;
+    box-shadow: 0px 0px 6px 0.5px #FFCC00;
+    width: 80%; 
+}
+table { 
+    font-size: 0.8em;    
+    margin: 3.5em auto;     
+    width: 90%; 
+    text-align: center;  
+    border-collapse: collapse;
 
+}
 th { 
     /* font-weight: normal;   */   
     padding: 1em;     
@@ -12,6 +31,7 @@ th {
 td{
     border: none;
     padding: 1em;
+    font-weight: normal; 
 }
 
 
@@ -34,4 +54,10 @@ button{
 button:hover{
     background-color: #24303c ;
     color:#FFCC00;
+}
+
+@media screen and (max-width:970px){
+    table tr td:nth-child(3), table tr th:nth-child(3), table tr td:nth-child(4), table tr th:nth-child(4), table tr td:nth-child(2), table tr th:nth-child(2), table tr td:nth-child(5), table tr th:nth-child(5){
+        display:none;
+    }
 }

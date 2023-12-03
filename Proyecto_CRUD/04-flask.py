@@ -105,8 +105,8 @@ class Usuario:
 #--------------------------------------------------------------------
 #  Cuerpo del programa #-------------------------------------------------------------------- 
 # Crear una instancia de la clase usuario_registro
-""" usuario_registro = Usuario(host='caritogonza.mysql.pythonanywhere-services.com', user='caritogonza', password='CaroCodo', database='caritogonza$yac_registro_usuarios')  """
-usuario_registro = Usuario(host='localhost', user='root', password='', database='yac_registro_usuarios') 
+
+usuario_registro = Usuario(host='localhost', user='root', password='', database='db_registro_us_yac') 
 # Carpeta para guardar las imagenes 
 #ruta_destino = 'static/img/' #buena practica crear carpeta statuc donde guardar archivos estaticos.
 #-------------------------------------------------------------------- 
