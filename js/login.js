@@ -1,5 +1,5 @@
-const URL = "http://127.0.0.1:5000/" 
-
+/* const URL = "http://127.0.0.1:5000/"  */
+const URL = "http://caritogonza.pythonanywhere.com/" 
 
 /* let formLogin = document.querySelector("#form-login") */
 let formRegistro = document.querySelector("#form-registro")

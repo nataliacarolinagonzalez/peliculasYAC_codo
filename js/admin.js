@@ -1,5 +1,5 @@
-const URL = "http://127.0.0.1:5000/" 
-
+//const URL = "http://127.0.0.1:5000/" 
+const URL = "http://caritogonza.pythonanywhere.com/" 
 
 let formAdmin = document.querySelector("#form-admin")
 let formRegistro = document.querySelector("#form-registro")
@@ -66,28 +66,71 @@ formAdmin.addEventListener("submit", function(e){
 }
 )
 
-function validarAdmin(rta, email_ingresado, password_ingresado){
+/* function validarAdmin(rta, email_ingresado, password_ingresado){
     
     for (let i=0; i < rta.length; i++){
-        /*console.log(rta[i].email)
-        console.log(rta[i].password)
-        console.log(rta[i].nombre)
-        console.log(rta[i].apellido)
-        console.log(rta[i].usuario) */
-
+       
         if (email_ingresado === rta[i].email && password_ingresado === rta[i].password){
             //console.log(rta[i].email, rta[i].password)
             //alert("Ud puede ingresar")
-            /* admin.style.display = "none"
-            listado.style.display = "block" */
+            
             let usuario = rta[i].usuario
             sessionStorage.setItem('usuario', usuario)
             location.href="us_admin.html";
-
-            } 
+            }
+            if (email_ingresado === rta[i].email){
+                if (password_ingresado === rta[i].password){
+                console.log(rta[i].email, rta[i].password)
+                alert("Ud puede ingresar")
+                 admin.style.display = "none"
+                listado.style.display = "block" 
+                let usuario = rta[i].usuario
+                sessionStorage.setItem('usuario', usuario)
+                location.href="us_admin.html";
+                } else{
+                    alert("Contraseña incorrecta")
+                }
+            } else{
+                alert("Usuario no encontrado")
+            }
         }
-    }
+        
+    } */
 
+    function validarAdmin(rta, email_ingresado, password_ingresado){
+    let ac = 0
+        for (let i=0; i < rta.length ; i++){
+           
+            /* if (email_ingresado === rta[i].email && password_ingresado === rta[i].password){
+                //console.log(rta[i].email, rta[i].password)
+                //alert("Ud puede ingresar")
+                
+                let usuario = rta[i].usuario
+                sessionStorage.setItem('usuario', usuario)
+                location.href="us_admin.html";
+                } */
+                if (email_ingresado === rta[i].email){
+                    if (password_ingresado === rta[i].password){
+                    //console.log(rta[i].email, rta[i].password)
+                    //alert("Ud puede ingresar")
+                    /* admin.style.display = "none"
+                    listado.style.display = "block" */
+                    let usuario = rta[i].usuario
+                    sessionStorage.setItem('usuario', usuario)
+                    location.href="us_admin.html";
+                    } else{
+                        alert("Contraseña incorrecta")
+                    }      
+                }else{
+                    ac++
+                    if (ac == rta.length){
+                        alert("Usuario no encontrado")
+                    }
+                    
+                }
+            }
+            
+        }
 
 
 
