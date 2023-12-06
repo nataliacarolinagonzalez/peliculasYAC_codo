@@ -4,25 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YAC - Contacto</title>
+    <title>YAC - Login</title>
     <link rel="icon" type="image/jpg" href="img/logonegro.png">
     <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/listado.css">
+
 </head>
 
 <body>
-    
     <header>
         <nav>
-            <a href="index.html"><img id="logoimg" src="img/logoNEGRO.png" alt="logo"></a>
+            <a href="index.html"><img id="logoimg" src="img/logonegro.png" alt="logo"></a>
             <ul>
                 <a href="./index.html"><li>Inicio</li></a>
                 <a href="./tendencia.html"><li>Tendencia</li></a>
                 <a href="./busqueda.html"><li>Buscar</li></a>
                 <a href="./contacto.html"><li>Contacto</li></a>
             </ul>   
-            <!-- <div id="search-tab">
+           <!--  <div id="search-tab">
                     <input type="text" placeholder="Buscar..." maxlength="150" minlength="3">
                     <button><i class="fa-solid fa-magnifying-glass"></i></button> 
             </div>  -->
@@ -34,28 +35,32 @@
             </div>
         </nav>
     </header>
-    <div class="grid-container">    
+    <div class="grid-container">
+        <div class="encabezado">
+            <img id="animacion-logo" src="img/logoamarillo.png" alt="logo">
+        </div> 
         <main>
-            <div class="formulario">
-                <h3>Formulario de Contacto</h3>
-                <form action="https://formspree.io/f/mvonjkay" target="_blank" method="post">
-                    <label  for="nombre">Nombre y Apellido*</label>
-                    <input name="nombre" type="text">
-                     <label for="tel">Teléfono*</label>
-                    <input name="tel" type="tel" placeholder="Código de área y número">
-                    <label for="Email">E-mail*</label>
-                    <input  name="email" type="text" placeholder="mail@mail.com"> 
-                    <label for="acercaDe">Comentarios*</label>
-                    <textarea name="acercaDe" id="acercaDe" cols="20" rows="10"  placeholder="Escribí tu consulta"></textarea>   
-                    <input class="pie-input" name="condiciones" value="acepta" type="checkbox">
-                    <label class="pie-input" for="condiciones">Acepto las condiciones*</label>
-                    <p>* campo obligatorio.</p>
-                    <div id="pie-button">
-                        <button type="submit">Enviar</button>
-                        <button  type="reset"> Restablecer</button>    
-                    </div> 
-                </form>  
-            </div> 
+            <br>
+            <div><h3 id="saludo"></h3></div>
+            <div id="listado">
+                <h3>Suscriptores de Peliculas YAC</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                            <th>Contraseña</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaUsuarios"> </tbody>
+                </table>
+               <!--  <a href="us_admin.html" id="link-listado"> Volver</a>   -->  
+                <a href="actualizar.html"id="link-actualizar"> Actualizar usuario</a>    
+                <a href="eliminar.html"id="link-eliminar"> Eliminar usuario</a>  
+            </div>    
         </main>
 
         <footer>
@@ -87,9 +92,11 @@
         </footer>
     </div>
     <a href="index.html"><img id="logo-fijo" src="img/logoNEGRO.png" alt="logo"></a>
+
     <script src="https://kit.fontawesome.com/ba0ece2d64.js"></script>
-    <script src="./js/contacto.js"></script>
+    <!-- <script src="./js/login.js"></script> -->
+    <!-- <script src="./js/listar.js"></script> -->
+    <script src="./js/us_admin.js"></script>
+
 </body>
 </html>
-
-

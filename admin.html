@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YAC - Login</title>
+    <title>YAC - Admin</title>
     <link rel="icon" type="image/jpg" href="img/logonegro.png">
     <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/listado.css">
-
 </head>
 
 <body>
@@ -29,6 +28,8 @@
             </div>  -->
             <div>
                 <a href="./login.html"><i id="iconos" class="fa-solid fa-user"></i></a>
+                <a href="./admin.html"><i class="fa-solid fa-screwdriver-wrench"></i></a>
+
                 <!-- <a href="./carrito.html"><i id="iconos" class="fa-solid fa-cart-shopping"></i></a> -->
             </div>
         </nav>
@@ -38,8 +39,23 @@
             <img id="animacion-logo" src="img/logoamarillo.png" alt="logo">
         </div> 
         <main>
-            
-            <div class="listado">
+
+            <div class="formulario" id="admin">
+                <h3>Log in</h3>
+                <form id="form-admin">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="text" placeholder="mail@mail.com"> 
+                    <label for="password">Clave</label>
+                    <input id="password" name="password" type="password" placeholder="Ingresá tu clave">  
+                    <div id="pie-button">
+                        <button type="submit">Enviar</button>
+                        <button  type="reset"> Restablecer</button> 
+                    </div>
+                </form>  
+                <!-- <button id="link-registro"> ¿No tenés cuenta? Registrate</button>  -->   
+            </div>
+           <!--  <div id="listado">
+                <div id="saludo"></div><hr>
                 <h3>Suscriptores de Peliculas YAC</h3>
                 <table>
                     <thead>
@@ -54,10 +70,10 @@
                     </thead>
                     <tbody id="tablaUsuarios"> </tbody>
                 </table>
-                <a href="login.html" id="link-listado"> Volver</a>    
+                <a href="#listado" id="link-listado"> Volver</a>    
                 <a href="actualizar.html"id="link-actualizar"> Actualizar usuario</a>    
                 <a href="eliminar.html"id="link-eliminar"> Eliminar usuario</a>  
-            </div>    
+            </div>  -->
         </main>
 
         <footer>
@@ -91,7 +107,7 @@
     <a href="index.html"><img id="logo-fijo" src="img/logoNEGRO.png" alt="logo"></a>
 
     <script src="https://kit.fontawesome.com/ba0ece2d64.js"></script>
-    <!-- <script src="./js/login.js"></script> -->
-    <script src="./js/listar.js"></script>
+    <script src="./js/admin.js"></script>
+
 </body>
 </html>

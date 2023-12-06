@@ -6,6 +6,7 @@ const app = Vue.createApp({
             usuarios: [] 
         } 
     }, 
+    
     methods: { obtenerUsuarios() { 
         // Obtenemos el contenido del inventario 
         fetch(URL + 'usuarios') 
@@ -35,7 +36,8 @@ const app = Vue.createApp({
                     alert(error.message); 
                 }); 
             } 
-        } 
+        }
+         
     }, 
     mounted() { 
         //Al cargar la página, obtenemos la lista de usuarios 

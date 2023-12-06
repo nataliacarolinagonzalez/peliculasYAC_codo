@@ -102,11 +102,49 @@ class Usuario:
         self.conn.commit() 
         return self.cursor.rowcount > 0 
     
+class Admin:
+    def __init__(self, host, user, password, database):
+        # Primero, establecemos una conexión sin especificar la base de datos 
+        self.conn = mysql.connector.connect( 
+            host=host, 
+            user=user, 
+            password=password 
+        )
+        self.cursor = self.conn.cursor()
+        self.cursor.execute(f"USE {database}") 
+        self.conn.commit()
+        self.cursor.close() 
+        self.cursor = self.conn.cursor(dictionary=True)
+
+        #---------------------------------------------------------------- 
+    def listar_admin(self): 
+        self.cursor.execute("SELECT * FROM admin") 
+        admin = self.cursor.fetchall() 
+        return admin
+    #--------------------------------------
+    def consultar_admin(self, email):
+        self.cursor.execute(f"SELECT * FROM admin WHERE email = '{email}'") 
+        return self.cursor.fetchone()
+    #---------------------------------------------------------------- 
+    def mostrar_admin(self, email): 
+        # Mostramos los datos de un admin a partir de su código 
+        adm = self.consultar_admin(email) 
+        if adm: 
+            print("-" * 40) 
+            print(f"Email.....: {adm['email']}") 
+            print(f"Password..: {adm['password']}") 
+            print("-" * 40) 
+        else: 
+            print("usuario no encontrado.") 
+    
 #--------------------------------------------------------------------
 #  Cuerpo del programa #-------------------------------------------------------------------- 
 # Crear una instancia de la clase usuario_registro
 
 usuario_registro = Usuario(host='localhost', user='root', password='', database='db_registro_us_yac') 
+
+usuario_admin = Admin(host='localhost', user='root', password='', database='login_yac') 
+
 # Carpeta para guardar las imagenes 
 #ruta_destino = 'static/img/' #buena practica crear carpeta statuc donde guardar archivos estaticos.
 #-------------------------------------------------------------------- 
@@ -172,6 +210,20 @@ def modificar_usuario(usuario):
     else: 
         return jsonify({"mensaje": "usuario no encontrado"}), 404 
     
+
+@app.route("/admin", methods=["GET"]) 
+def listar_admin(): 
+    admin = usuario_admin.listar_admin()
+    return jsonify(admin) 
+
+@app.route("/admin/<usuario>", methods=["GET"]) 
+def mostrar_admin(email): 
+    usuario_admin.mostrar_admin(email) 
+    adm = usuario_admin.consultar_admin(email) 
+    if adm: 
+        return jsonify(adm) 
+    else: 
+        return "Usuario no encontrado", 404
 
 if __name__ == "__main__":
     app.run(debug=True) #hace correr la aplicación
