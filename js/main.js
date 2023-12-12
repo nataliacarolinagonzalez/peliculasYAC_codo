@@ -64,7 +64,7 @@ function crearCardPelicula(datos, idPelis){
                     //console.log(rdos[0].key)
                     document.querySelector('.cards-container-peliculas').insertAdjacentHTML ("afterend", 
                         '<section id="trailer">' +
-                        '<iframe src="https://www.youtube.com/embed/' + rdos[0].key +'" frameborder = "0"  width="560" height="315"></iframe>'+
+                        '<iframe src="https://www.youtube.com/embed/' + rdos[0].key +'" frameborder = "0"  width="560" height="315" allowfullscreen:"allowfullscreen"></iframe>'+
                         '</section>')             
               })
   }

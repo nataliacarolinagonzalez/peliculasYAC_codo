@@ -1,5 +1,5 @@
-//const URL = "http://127.0.0.1:5000/" 
-const URL = "http://caritogonza.pythonanywhere.com/" 
+const URL = "http://127.0.0.1:5000/" 
+//const URL = "http://caritogonza.pythonanywhere.com/" 
 
 let formAdmin = document.querySelector("#form-admin")
 let formRegistro = document.querySelector("#form-registro")
@@ -11,32 +11,6 @@ let password = document.querySelector("#password")
 let admin = document.querySelector("#admin")
 let listado = document.querySelector("#listado")
 //let saludo = document.querySelector("#saludo")
-
-fetch(URL + 'usuarios') 
-    .then(function (response) { 
-        if (response.ok) {
-            return response.json();
-        } else { 
-            // Si hubo un error, lanzar explícitamente una excepción 
-            // para ser "catcheada" más adelante 
-            throw new Error('Error al obtener los usuarios.'); 
-        } 
-    }) 
-   /*  .then(function (data) { 
-        let tablaUsuarios = document.getElementById('tablaUsuarios'); 
-        // Iteramos sobre los usuarios y agregamos filas a la tabla 
-        for (let usuario of data) { 
-            let fila = document.createElement('tr'); 
-            fila.innerHTML = '<td>' + usuario.usuario + '</td>' + '<td>' + usuario.nombre + '</td>' + '<td>' + usuario.apellido + '</td>' + '<td>' + usuario.tel + '</td>' + '<td>' + usuario.email + '</td>' + '<td>' + usuario.password + '</td>'; 
-            tablaUsuarios.appendChild(fila); 
-        } 
-    })  */
-    .catch(function (error) { 
-        // En caso de error 
-        alert('Error al agregar el usuario.'); 
-        console.error('Error:', error); 
-})
-
 
 formAdmin.addEventListener("submit", function(e){
     e.preventDefault()
@@ -65,6 +39,30 @@ formAdmin.addEventListener("submit", function(e){
 
 }
 )
+
+
+function validarAdmin(rta, email_ingresado, password_ingresado){
+let ac = 0
+    for (let i=0; i < rta.length ; i++){
+        if (email_ingresado === rta[i].email){
+            if (password_ingresado === rta[i].password){
+            //console.log(rta[i].email, rta[i].password)
+            let usuario = rta[i].usuario
+            sessionStorage.setItem('usuario', usuario)
+            location.href="us_admin.html";
+            } else{
+                alert("Contraseña incorrecta")
+            }      
+        }else{
+            ac++
+            if (ac == rta.length){
+                alert("Usuario no encontrado")
+            }
+                
+        }
+    }
+        
+}
 
 /* function validarAdmin(rta, email_ingresado, password_ingresado){
     
@@ -96,41 +94,6 @@ formAdmin.addEventListener("submit", function(e){
         }
         
     } */
-
-    function validarAdmin(rta, email_ingresado, password_ingresado){
-    let ac = 0
-        for (let i=0; i < rta.length ; i++){
-           
-            /* if (email_ingresado === rta[i].email && password_ingresado === rta[i].password){
-                //console.log(rta[i].email, rta[i].password)
-                //alert("Ud puede ingresar")
-                
-                let usuario = rta[i].usuario
-                sessionStorage.setItem('usuario', usuario)
-                location.href="us_admin.html";
-                } */
-                if (email_ingresado === rta[i].email){
-                    if (password_ingresado === rta[i].password){
-                    //console.log(rta[i].email, rta[i].password)
-                    //alert("Ud puede ingresar")
-                    /* admin.style.display = "none"
-                    listado.style.display = "block" */
-                    let usuario = rta[i].usuario
-                    sessionStorage.setItem('usuario', usuario)
-                    location.href="us_admin.html";
-                    } else{
-                        alert("Contraseña incorrecta")
-                    }      
-                }else{
-                    ac++
-                    if (ac == rta.length){
-                        alert("Usuario no encontrado")
-                    }
-                    
-                }
-            }
-            
-        }
 
 
 

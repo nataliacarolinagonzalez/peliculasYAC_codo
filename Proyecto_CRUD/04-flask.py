@@ -141,12 +141,12 @@ class Admin:
 #  Cuerpo del programa #-------------------------------------------------------------------- 
 # Crear una instancia de la clase usuario_registro
 
-""" usuario_registro = Usuario(host='localhost', user='root', password='', database='db_registro_us_yac') 
-usuario_admin = Admin(host='localhost', user='root', password='', database='login_yac')  """
+usuario_registro = Usuario(host='localhost', user='root', password='', database='db_registro_us_yac') 
+usuario_admin = Admin(host='localhost', user='root', password='', database='login_yac') 
 
-usuario_registro = Usuario(host='caritogonza.mysql.pythonanywhere-services.com', user='caritogonza', password='CaroCodo', database='caritogonza$yac_registro_usuarios') 
+""" usuario_registro = Usuario(host='caritogonza.mysql.pythonanywhere-services.com', user='caritogonza', password='CaroCodo', database='caritogonza$yac_registro_usuarios') 
 
-usuario_admin = Admin(host='caritogonza.mysql.pythonanywhere-services.com', user='caritogonza', password='CaroCodo', database='caritogonza$login_yac') 
+usuario_admin = Admin(host='caritogonza.mysql.pythonanywhere-services.com', user='caritogonza', password='CaroCodo', database='caritogonza$login_yac')  """
 
 
 # Carpeta para guardar las imagenes 
@@ -214,7 +214,8 @@ def modificar_usuario(usuario):
     else: 
         return jsonify({"mensaje": "usuario no encontrado"}), 404 
     
-
+#---------------------------------------------------------------------------------
+# ADMIN
 @app.route("/admin", methods=["GET"]) 
 def listar_admin(): 
     admin = usuario_admin.listar_admin()
